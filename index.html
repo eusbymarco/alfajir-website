@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Discover electronics and home appliances at ALFAJIR. The dawn of smart living.">
+  <title>ALFAJIR | The Dawn of Smart Living</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ALFAJIR home">
+        <img class="brand-image" src="images/ALFAJIR LOGO.jpeg" alt="ALFAJIR logo" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <div class="category-navigation" id="category-navigation" aria-label="Shop by category"></div>
+        <button class="cart-button" type="button" aria-label="View cart">
+          <span class="cart-count" aria-live="polite">0</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 9H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="10" cy="20" r="1" fill="currentColor" />
+            <circle cx="18" cy="20" r="1" fill="currentColor" />
+          </svg>
+        </button>
+        <form class="search-form" role="search" aria-label="Search ALFAJIR">
+          <label class="visually-hidden" for="site-search">Search ALFAJIR</label>
+          <input id="site-search" name="q" type="search" placeholder="Search" autocomplete="off">
+          <button type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7" />
+              <path d="m15.5 15.5 4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </svg>
+          </button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-label="Featured announcements">
+      <div class="hero-slides" aria-live="polite">
+        <article class="hero-slide is-active" aria-hidden="false">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1800&q=85" alt="A television in a contemporary living room" fetchpriority="high">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span></span> SMART HOME</p>
+            <h1>SMART TECHNOLOGY. BETTER LIVING.</h1>
+            <p class="hero-description">Explore TVs, appliances and entertainment for your home.</p>
+            <a class="hero-link" href="#featured">SHOP NOW</a>
+          </div>
+          <p class="slide-note">01 <span>/</span> 03</p>
+        </article>
+
+        <article class="hero-slide" aria-hidden="true">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1800&q=85" alt="A bright, modern kitchen" loading="lazy">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span></span> HOME UPGRADE</p>
+            <h2>UPGRADE YOUR HOME</h2>
+            <p class="hero-description">Quality appliances from trusted brands.</p>
+            <a class="hero-link" href="#featured">EXPLORE PRODUCTS</a>
+          </div>
+          <p class="slide-note">02 <span>/</span> 03</p>
+        </article>
+
+        <article class="hero-slide" aria-hidden="true">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1800&q=85" alt="A speaker ready for a listening session" loading="lazy">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span></span> SPECIAL OFFERS</p>
+            <h2>DEALS FOR YOUR HOME</h2>
+            <p class="hero-description">Discover selected products at great prices.</p>
+            <a class="hero-link" href="#deals">SHOP DEALS</a>
+          </div>
+          <p class="slide-note">03 <span>/</span> 03</p>
+        </article>
+      </div>
+
+      <div class="hero-controls" aria-label="Slider controls">
+        <button class="slider-arrow slider-previous" type="button" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14.5 5-7 7 7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+        <div class="slider-dots" aria-label="Choose a slide">
+          <button class="slider-dot is-active" type="button" aria-label="Show slide 1" aria-pressed="true"></button>
+          <button class="slider-dot" type="button" aria-label="Show slide 2" aria-pressed="false"></button>
+          <button class="slider-dot" type="button" aria-label="Show slide 3" aria-pressed="false"></button>
+        </div>
+        <button class="slider-arrow slider-next" type="button" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="featured-section section-wrap" id="featured">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">HOT PICKS</p>
+          <h2>FEATURED PRODUCTS</h2>
+        </div>
+        <a class="view-link" href="#televisions">View All →</a>
+      </div>
+      <div class="product-grid featured-grid" id="featured-products"></div>
+    </section>
+
+    <section class="search-results-section section-wrap" id="search-results" aria-live="polite" hidden>
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">SEARCH RESULTS</p>
+          <h2 id="search-results-heading"></h2>
+        </div>
+        <button class="view-link clear-search" type="button">Clear Search</button>
+      </div>
+      <div class="product-grid" id="search-results-products"></div>
+    </section>
+
+    <section class="deal-banner section-wrap" id="deals" aria-label="Special deals">
+      <div class="deal-banner-content">
+        <div class="deal-copy">
+          <p class="section-kicker">SPECIAL DEALS</p>
+          <h2>Smarter living starts here.</h2>
+          <a class="deal-link" href="#featured">VIEW DEALS</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="Smart home entertainment setup" loading="lazy">
+      </div>
+    </section>
+
+    <div id="category-sections"></div>
+
+    <section class="brands-section section-wrap" aria-labelledby="brands-heading">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">TOP BRANDS</p>
+          <h2 id="brands-heading">SHOP BY BRAND</h2>
+        </div>
+      </div>
+      <div class="brand-strip" id="brand-strip" aria-label="Brands in the ALFAJIR catalog"></div>
+    </section>
+
+    <section class="trust-section" id="about" aria-label="Why choose ALFAJIR">
+      <div class="trust-grid section-wrap">
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M4 12.5h24M8 7h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-14a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19h5M10 15h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Fast Countrywide Delivery</h3>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 3 26 7v7c0 7-4.4 12.2-10 15-5.6-2.8-10-8-10-15V7l10-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m11.5 15.5 3 3 6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Warranty</h3>
+        </article>
+        <article class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="7" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 13h24M10 20h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M22 18.5h4M24 16.5v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Pay on Delivery</h3>
+        </article>
+        <article class="trust-item" id="contact">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M5 7h22v16H15l-7 5v-5H5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M11 15h10M16 10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Direct Customer Support</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner section-wrap">
+      <div class="footer-brand">
+        <img src="images/ALFAJIR LOGO.jpeg" alt="ALFAJIR logo">
+        <p>THE DAWN OF SMART LIVING</p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Navigation</h3>
+          <a href="index.html">Home</a>
+          <a href="category.html?category=televisions">Shop</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Categories</h3>
+          <a href="category.html?category=televisions">Televisions</a>
+          <a href="category.html?category=refrigerators">Refrigerators</a>
+          <a href="category.html?category=washing-machines">Washing Machines</a>
+          <a href="category.html?category=sound-bars">Soundbars</a>
+          <a href="category.html?category=chest-freezers">Chest Freezers</a>
+          <a href="category.html?category=kitchen-appliances">Kitchen Appliances</a>
+          <a href="category.html?category=home-appliances">Home Appliances</a>
+        </div>
+        <div>
+          <h3>Customer service</h3>
+          <a href="#">Delivery</a>
+          <a href="#">Warranty</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
