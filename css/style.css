@@ -561,6 +561,10 @@ input:focus-visible {
   min-height: clamp(460px, 48vw, 620px);
 }
 
+.hero-slides.has-poster-slide {
+  min-height: 0;
+}
+
 .hero-slide {
   position: absolute;
   inset: 0;
@@ -573,6 +577,23 @@ input:focus-visible {
   z-index: 1;
   opacity: 1;
   pointer-events: auto;
+}
+
+.hero-slide-black-friday.is-active {
+  position: relative;
+  inset: auto;
+}
+
+.hero-poster {
+  display: block;
+}
+
+.hero-slide-black-friday .hero-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero-image,
@@ -590,28 +611,6 @@ input:focus-visible {
 
 .hero-shade {
   background: linear-gradient(90deg, rgb(9 25 41 / 82%) 0%, rgb(9 25 41 / 62%) 32%, rgb(9 25 41 / 18%) 70%);
-}
-
-.hero-slide-black-friday .hero-shade {
-  background: linear-gradient(90deg, transparent 38%, rgb(9 25 41 / 18%) 58%, rgb(9 25 41 / 76%) 100%);
-}
-
-.hero-slide-black-friday .hero-content {
-  align-items: flex-end;
-  text-align: right;
-}
-
-.hero-slide-black-friday .eyebrow {
-  justify-content: flex-end;
-}
-
-.hero-slide-black-friday .hero-content h1 {
-  max-width: 500px;
-  font-size: clamp(2rem, 4vw, 3.8rem);
-}
-
-.hero-slide-black-friday .hero-description {
-  max-width: 390px;
 }
 
 .hero-content {
@@ -1960,14 +1959,6 @@ input:focus-visible {
 @media (max-width: 760px) {
   :root {
     --page-gutter: 22px;
-  }
-
-  .hero-slide-black-friday .hero-image {
-    object-position: left center;
-  }
-
-  .hero-slide-black-friday .hero-content h1 {
-    max-width: 320px;
   }
 
   .hero-content h1,
