@@ -1113,95 +1113,12 @@ window.ALFAJIR_PRODUCTS = [
   }
 },
 {
-  id: "tcl-tp300k",
-  name: "TCL TP300K Sound Party",
-  description: "Take your parties to the next level with the TCL TP300K Sound Party speaker. Featuring powerful 340W audio, eight dynamic lighting presets and up to 18 hours of playback, it is built for unforgettable entertainment.",
-  category: "sound-bars",
-  brand: "TCL",
-  price: null,
-  image: "images/soundbars/TCL TP300K Sound Party.jpeg",
-  stock: true,
-  featured: false,
-  model: "TP300K",
-  specs: {
-    audio: "Powerful Party Audio, 8 Dynamic Light Show Presets",
-    power: "340W Maximum",
-    connectivity: "To be confirmed",
-    battery: "Up to 18 Hours"
-  }
-},
-
-  {
-    id: "alyons-mixer",
-    name: "Alyons Stand Mixer",
-    description: "",
-    category: "kitchen-appliances",
-    brand: "Alyons",
-    price: null,
-    image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80",
-    stock: true,
-    featured: true,
-    specs: { type: "Kitchen Essential" }
-  },
-  {
-    id: "olielion-air-cleaner",
-    name: "Olelion Air Purifier",
-    description: "",
-    category: "home-appliances",
-    subcategory: "other",
-    brand: "Olelion",
-    price: null,
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80",
-    stock: true,
-    featured: true,
-    specs: { type: "Air Care" }
-  },
-  {
-    id: "alyons-fan",
-    name: "Alyons Ceiling Fan",
-    description: "",
-    category: "home-appliances",
-    subcategory: "other",
-    brand: "Alyons",
-    price: null,
-    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80",
-    stock: true,
-    featured: true,
-    specs: { type: "Cooling" }
-  },
-  {
-    id: "amtec-vacuum",
-    name: "Amtec Vacuum Cleaner",
-    description: "",
-    category: "home-appliances",
-    subcategory: "other",
-    brand: "Amtec",
-    price: null,
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
-    stock: true,
-    featured: false,
-    specs: { type: "Deep Clean" }
-  },
-  {
-    id: "globalstar-water-heater",
-    name: "Global Star Water Heater",
-    description: "",
-    category: "home-appliances",
-    subcategory: "other",
-    brand: "Global Star",
-    price: null,
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
-    stock: true,
-    featured: false,
-    specs: { type: "Hot Water" }
-  },
-{
     "id": "cooker-mika-3g-1e-60x60-black-cooker-rc807",
     "name": "Mika 3G+1E 60X60 BLACK COOKER- RC807",
-    "description": "",
+    "description": "a hybrid standing cooker designed for versatile everyday cooking.",
     "category": "kitchen-appliances",
     "brand": "Mika",
-    "price": null,
+    "price":54000,
     "image": "images/kitchen%20aplliances/cookers/3G%2B1E%2060X60%20BLACK%20COOKER-%20RC807.jpeg",
     "stock": true,
     "featured": false,
@@ -1209,16 +1126,19 @@ window.ALFAJIR_PRODUCTS = [
       "type": "Cooker",
       "model": "RC807",
       "burnerConfiguration": "3G+1E",
-      "size": "60X60"
+      " size": "60X60",
+      "Acessories": "Oven tray and 1 oven grid",
+      "OvenType": "Electric oven equipped with a mechanical timer, oven lamp, chicken rotisserie, and a double-glass door for heat retention",
+      "BuildMaterial": " Enamel pan supports, stainless steel design knobs, and a glass top lid to prevent spills"
     }
   },
   {
     "id": "cooker-mika-3g-1e-60x60-half-inox-cooker-rc-610",
     "name": "Mika 3G+1E 60X60 HALF INOX COOKER - RC 610",
-    "description": "",
+    "description": " is a freestanding hybrid kitchen appliance featuring a stainless steel and half-inox finish.",
     "category": "kitchen-appliances",
     "brand": "Mika",
-    "price": null,
+    "price": 54000,
     "image": "images/kitchen%20aplliances/cookers/3G%2B1E%2060X60%20HALF%20INOX%20COOKER%20-%20RC%20610.jpeg",
     "stock": true,
     "featured": false,
@@ -1226,16 +1146,18 @@ window.ALFAJIR_PRODUCTS = [
       "type": "Cooker",
       "model": "RC 610",
       "burnerConfiguration": "3G+1E",
-      "size": "60X60"
+      "size": "60X60",
+      "Acessories": "Enamel pan supports, glass top lid, 1 oven tray, and 1 oven grid",
+      "OvenType": "Electric oven and grill with top and bottom heating elements equipped with a mechanical timer, , chicken rotisserie, and a double-glass door for heat retention",
     }
   },
   {
     "id": "cooker-mika-3g-1e-60x60-stainless-steel-cooker-rc685",
     "name": "Mika 3G+1E 60X60 STAINLESS STEEL COOKER - RC685",
-    "description": "",
+    "description": "a dual-fuel free-standing kitchen unit combining gas and electric cooking elements.",
     "category": "kitchen-appliances",
     "brand": "Mika",
-    "price": null,
+    "price": 62800,
     "image": "images/kitchen%20aplliances/cookers/3G%2B1E%2060X60%20STAINLESS%20STEEL%20COOKER%20-%20RC685.jpeg",
     "stock": true,
     "featured": false,
@@ -1243,32 +1165,40 @@ window.ALFAJIR_PRODUCTS = [
       "type": "Cooker",
       "model": "RC685",
       "burnerConfiguration": "3G+1E",
-      "size": "60X60"
+      "size": "60X60",
+      "Acessories": " Rotisserie function, glass top lid, and dual-side gas connections.",
+      "OvenType": " Electric oven equipped with a convection fan and built-in oven lamp",
+      "BuildMaterial": "  Stainless steel hob"
+
     }
   },
   {
     "id": "cooker-mika-4-gas-55x55-dark-red-cooker-eb-303",
     "name": "Mika 4 GAS 55X55 DARK RED COOKER - EB 303",
-    "description": "",
+    "description": " is a freestanding kitchen cooker featuring a compact 55 × 55 cm footprint and a dark red finish",
     "category": "kitchen-appliances",
     "brand": "Mika",
-    "price": null,
+    "price": 22000,
     "image": "images/kitchen%20aplliances/cookers/4%20GAS%2055X55%20DARK%20RED%20COOKER%20-%20EB%20303.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "EB 303",
-      "size": "55X55"
+      "size": "55X55",
+      "Acessories": " Single-spit rotisserie, built-in timer, and adjustable leveling legs",
+      "OvenType": "  50-liter gas oven with an electrical thermostat, oven lamp, and double-glass oven door",
+      "BuildMaterial": "Dark red color"
+
     }
   },
   {
     "id": "cooker-mika-4gas-2-electric-90x60-silver-cooker-rc-596",
     "name": "Mika 4GAS + 2 ELECTRIC 90X60 SILVER COOKER- RC 596",
-    "description": "",
+    "description": "a dual-fuel free-standing kitchen unit combining gas and electric cooking elements.",
     "category": "kitchen-appliances",
     "brand": "Mika",
-    "price": null,
+    "price": 92000,
     "image": "images/kitchen%20aplliances/cookers/4GAS%20%2B%202%20ELECTRIC%2090X60%20SILVER%20COOKER-%20RC%20596.jpeg",
     "stock": true,
     "featured": false,
@@ -1276,16 +1206,19 @@ window.ALFAJIR_PRODUCTS = [
       "type": "Cooker",
       "model": "RC 596",
       "burnerConfiguration": "4GAS + 2 ELECTRIC",
-      "size": "90X60"
+      "size": "90X60",
+      "Acessories": " Oven tray and wire grid (shelf)",
+      "OvenType": "  Full-size electric oven equipped with a turbo fan (convection) for fast and even cooking, top and bottom heating, grill function, and a chicken rotisserie (turnspit",
+      "BuildMaterial": "Silver finish / mechanical knobs"
     }
   },
   {
     "id": "cooker-armco-gc-f5531px-w-3gas-1electric-static-electric-oven-grill-50x50",
     "name": "GC-F5531PX(W) â€“ 3Gas + 1Electric , Static Electric Oven Grill 50X50,",
-    "description": "",
+    "description": " is a compact freestanding cooker featuring 3 gas burners and 1 electric plate, paired with a static electric oven and grill.",
     "category": "kitchen-appliances",
     "brand": "Armco",
-    "price": null,
+    "price": 38995,
     "image": "images/kitchen%20aplliances/cookers/armco/GC-F5531PX%28W%29%20%E2%80%93%203Gas%20%2B%201Electric%20%2C%20Static%20Electric%20Oven%20Grill%2050X50%2C.jpeg",
     "stock": true,
     "featured": false,
@@ -1293,37 +1226,47 @@ window.ALFAJIR_PRODUCTS = [
       "type": "Cooker",
       "model": "GC-F5531PX(W)",
       "burnerConfiguration": "3Gas + 1Electric",
-      "size": "50X50"
+      "size": "50X50",
+      "OvenType": "Static electric oven equipped with a built-in grill, thermostat control, oven lamp, and a rotisserie turnspit",
     }
   },
   {
     "id": "cooker-armco-gc-f6631qx2-sl-3-multi-gas-burners-1electric-180mm-2000w-rapid",
     "name": "GC-F6631QX2(SL) â€“ 3 Multi-gas Burners + 1Electric (180mm-2000W RAPID",
-    "description": "",
+    "description": "a 60×60 cm hybrid kitchen appliance featuring 3 multi-gas burners and 1 electric rapid hotplate.",
     "category": "kitchen-appliances",
     "brand": "Armco",
-    "price": null,
+    "price": 40000,
     "image": "images/kitchen%20aplliances/cookers/armco/GC-F6631QX2%28SL%29%20%E2%80%93%203%20Multi-gas%20Burners%20%2B%201Electric%20%28180mm-2000W%20RAPID.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
-      "model": "GC-F6631QX2(SL)"
+      "model": "GC-F6631QX2(SL)",
+      "OvenType": " Built-in 60×60 oven with grill, thermostat, and rotisserie",
+      "burnerConfiguration": "3 Multi-gas Burners + 1 Electric",
+      "size": "60X60",
+      "Acessories": "  Silver finish, tempered glass lid, oven lamp, matt enamel pan supports and caps, plus 1 extra round tray"
     }
   },
   {
     "id": "cooker-armco-gc-f6631qx2-ss-3-multi-gas-burners-1electric-180mm-2000w-rapid",
     "name": "GC-F6631QX2(SS) â€“ 3 Multi-gas Burners + 1Electric (180mm-2000W RAPID",
-    "description": "",
+    "description": "The Armco GC-F6631QX2(SS) Free-standing Cooker is a 60x60 cm stainless steel combination cooker featuring 3 multi-gas burners and 1 rapid electric hotplate.",
     "category": "kitchen-appliances",
     "brand": "Armco",
-    "price": null,
+    "price": 45000,
     "image": "images/kitchen%20aplliances/cookers/armco/GC-F6631QX2%28SS%29%20%E2%80%93%203%20Multi-gas%20Burners%20%2B%201Electric%20%28180mm-2000W%20RAPID.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
-      "model": "GC-F6631QX2(SS)"
+      "model": "GC-F6631QX2(SS)",
+      "OvenType": "Built-in oven and grill with thermostat, interior lamp, rotisserie, and mechanical timer",
+      "burnerConfiguration": "3 Multi-gas Burners + 1 Electric",
+      "size": "60X60",
+      "Design": " stainless steel body, tempered glass lid, matt enamel pan supports and caps, cool door with removable inner glass, and adjustable feet",
+      "Acessories": "One-touch auto ignition, 1 grid, 1 standard tray, 1 extra deep tray, and 1 extra round tray"
     }
   },
   {
@@ -1332,72 +1275,44 @@ window.ALFAJIR_PRODUCTS = [
     "description": "",
     "category": "kitchen-appliances",
     "brand": "Armco",
-    "price": null,
+    "price": 40000,
     "image": "images/kitchen%20aplliances/cookers/armco/GC-F6640PX%28SL%29%20%E2%80%93%204%20Gas%2C%2060X60%20Gas%20Oven%2BGrill%2C%201%20Grid%20%2B%201%20Tray%2C%20Double%20Glass.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "GC-F6640PX(SL)",
-      "size": "60X60"
+      "size": "60X60",
+      "burnerConfiguration": "4 Gas",
+      "OvenType": "Integrated gas oven and grill with Dual Heating (ability to use baking and grill burners together)",
+      "Acessories": "1 grid shelf and 1 baking tray"
     }
   },
   {
     "id": "cooker-armco-gc-f9642fbt2-bk-4gas-1-wok-sabaf-burner-1-small-2-medium-sabaf-burners",
     "name": "GC-F9642FBT2(BK) 4Gas(1 Wok Sabaf Burner + 1 Small + 2 Medium Sabaf Burners)",
-    "description": "",
+    "description": "a premium, free-standing dual-fuel cooker designed for large kitchens and heavy-duty cooking. It combines the instant, high-heat responsiveness of Italian Sabaf gas burners with the precise, steady heat of electric hotplates, alongside a spacious built-in electric oven.",
     "category": "kitchen-appliances",
     "brand": "Armco",
-    "price": null,
+    "price": 93000,
     "image": "images/kitchen%20aplliances/cookers/armco/GC-F9642FBT2%28BK%29%204Gas%281%20Wok%20Sabaf%20Burner%20%2B%201%20Small%20%2B%202%20Medium%20Sabaf%20Burners%29.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
-      "model": "GC-F9642FBT2(BK)"
-    }
-  },
-  {
-    "id": "cooker-armco-gc-f9642jw3-ss-4gas-2-electric-1-145-1-180-rapid-60x90-full-function",
-    "name": "GC-F9642JW3(SS) â€“ 4Gas+ 2 Electric (1Ã—145 + 1Ã—180) RAPID, 60X90 Full Function",
-    "description": "",
-    "category": "kitchen-appliances",
-    "brand": "Armco",
-    "price": null,
-    "image": "images/kitchen%20aplliances/cookers/armco/GC-F9642JW3%28SS%29%20%E2%80%93%204Gas%2B%202%20Electric%20%281%C3%97145%20%2B%201%C3%97180%29%20RAPID%2C%2060X90%20Full%20Function.jpeg",
-    "stock": true,
-    "featured": false,
-    "specs": {
-      "type": "Cooker",
-      "model": "GC-F9642JW3(SS)",
-      "burnerConfiguration": "4Gas+ 2 Electric",
-      "size": "60X90"
-    }
-  },
-  {
-    "id": "cooker-armco-gc-f9642zbt2-sl-4gas-2electric-1-145-1-180-60x90-full-function",
-    "name": "GC-F9642ZBT2(SL) 4Gas+2Electric(1Ã—145 + 1Ã—180), 60X90 Full Function",
-    "description": "",
-    "category": "kitchen-appliances",
-    "brand": "Armco",
-    "price": null,
-    "image": "images/kitchen%20aplliances/cookers/armco/GC-F9642ZBT2%28SL%29%204Gas%2B2Electric%281%C3%97145%20%2B%201%C3%97180%29%2C%2060X90%20Full%20Function.jpeg",
-    "stock": true,
-    "featured": false,
-    "specs": {
-      "type": "Cooker",
-      "model": "GC-F9642ZBT2(SL)",
-      "burnerConfiguration": "4Gas+2Electric",
-      "size": "60X90"
-    }
+      "model": "GC-F9642FBT2(BK)",
+      "size": "60X90",
+      "burnerConfiguration": "4Gas(1 Wok Sabaf Burner + 1 Small + 2 Medium Sabaf Burners)",
+      "OvenType": " Built-in electric oven with grill function and thermostat control",
+      "Build": "SS304 Non-Magnetic Stainless Steel (INOX) Top"}
   },
   {
     "id": "cooker-haier-haier-3-gas-1-electric-60x60-cooker-with-electric-oven-hcr2031eed1",
     "name": "Haier 3 Gas + 1 Electric 60X60 Cooker with Electric Oven â€“ HCR2031EED1",
-    "description": "",
+    "description": " is a freestanding kitchen appliance that combines gas and electric cooking surfaces.",
     "category": "kitchen-appliances",
     "brand": "Haier",
-    "price": null,
+    "price": 55999,
     "image": "images/kitchen%20aplliances/cookers/Haier%203%20Gas%20%2B%201%20Electric%2060X60%20Cooker%20with%20Electric%20Oven%20%E2%80%93%20HCR2031EED1.jpeg",
     "stock": true,
     "featured": false,
@@ -1405,7 +1320,9 @@ window.ALFAJIR_PRODUCTS = [
       "type": "Cooker",
       "model": "HCR2031EED1",
       "burnerConfiguration": "3 Gas + 1 Electric",
-      "size": "60X60"
+      "size": "60X60",
+      "OvenType": "Built-in electric oven equipped with an oven light",
+      "Build": " stainless steel finish, cast iron grills, and push-to-ignite automatic ignition."
     }
   },
   {
@@ -1414,364 +1331,417 @@ window.ALFAJIR_PRODUCTS = [
     "description": "",
     "category": "kitchen-appliances",
     "brand": "Haier",
-    "price": null,
+    "price": 35000,
     "image": "images/kitchen%20aplliances/cookers/Haier%203%20Gas%20%2B%201%20Electric%2060%C3%9760%20Cooker%20with%20Electric%20Oven%2C%20Silver%20%E2%80%93%20HRE6313CDRSS.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "HRE6313CDRSS",
-      "burnerConfiguration": "3 Gas + 1 Electric"
+      "burnerConfiguration": "3 Gas + 1 Electric",
+      "size": "60X60",
+      "OvenType": " Large electric oven with a gas/electric grill function, oven light, and easy-clean enamel interior",
+      "Build": "Silver finish",
+      "Warranty": "2 years"
     }
   },
   {
     "id": "cooker-haier-haier-4-gas-60x60-cooker-with-electric-oven-hcr2040ees",
     "name": "Haier 4 Gas 60X60 Cooker with Electric Oven â€“ HCR2040EES",
-    "description": "",
+    "description": " is a freestanding kitchen appliance that combines gas and electric cooking surfaces.",
     "category": "kitchen-appliances",
     "brand": "Haier",
-    "price": null,
+    "price": 54000,
     "image": "images/kitchen%20aplliances/cookers/Haier%204%20Gas%2060X60%20Cooker%20with%20Electric%20Oven%20%E2%80%93%20HCR2040EES.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "HCR2040EES",
-      "size": "60X60"
+      "size": "60X60",
+      "burnerConfiguration": "4 Gas",
+      "OvenType": "60-liter electric oven with grill and convection fan",
+      "Build": "Italian design manufactured in Turkey, featuring cast iron grills, a glass top lid, double-glass oven door, mechanic timer, and automatic ignition.",
+      "Warranty": "2 years"
     }
   },
   {
     "id": "cooker-haier-haier-4-gas-burner-2-electric-plates-60-90-cooker-with-electric-long-oven-hcr6042eds",
     "name": "Haier 4 Gas Burner + 2 Electric Plates 60Ã—90 Cooker with Electric Long Oven â€“ HCR6042EDS",
-    "description": "",
+    "description": "90cm x 60cm hybrid freestanding cooker finished in stainless steel/inox, combining dual-fuel cooktop versatility with an extra-wide electric long oven. It is built for busy households that need to prepare multiple large dishes simultaneously while keeping kitchen floor space organized.",
     "category": "kitchen-appliances",
     "brand": "Haier",
-    "price": null,
+    "price": 99999,
     "image": "images/kitchen%20aplliances/cookers/Haier%204%20Gas%20Burner%20%2B%202%20Electric%20Plates%2060%C3%9790%20Cooker%20with%20Electric%20Long%20Oven%20%E2%80%93%20HCR6042EDS.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
-      "model": "HCR6042EDS"
+      "model": "HCR6042EDS",
+      "burnerConfiguration": "4 Gas Burner + 2 Electric Plates",
+      "size": "60X90",
+      "OvenType": " Extra-large electric long oven equipped with a grill, double oven fan/turbo fan, rotisserie, thermo-control, and built-in timer.",
+      "Warranty": "2 years"
     }
   },
   {
     "id": "cooker-haier-haier-5-gas-60x90-cooker-with-electric-long-oven-hcr6050ees",
     "name": "Haier 5 Gas 60X90 Cooker with Electric Long Oven â€“ HCR6050EES",
-    "description": "",
+    "description": "60cm x 90cm freestanding cooker finished in stainless steel/inox, combining dual-fuel cooktop versatility with an extra-wide electric long oven. It is built for busy households that need to prepare multiple large dishes simultaneously while keeping kitchen floor space organized.",
     "category": "kitchen-appliances",
     "brand": "Haier",
-    "price": null,
+    "price": 99999,
     "image": "images/kitchen%20aplliances/cookers/Haier%205%20Gas%2060X90%20Cooker%20with%20Electric%20Long%20Oven%20%E2%80%93%20HCR6050EES.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "HCR6050EES",
-      "size": "60X90"
-    }
-  },
-  {
-    "id": "cooker-haier-haier-5-gas-60x90-cooker-with-electric-oven-hcr6050des",
-    "name": "Haier 5 Gas 60X90 Cooker with Electric Oven â€“ HCR6050DES",
-    "description": "",
-    "category": "kitchen-appliances",
-    "brand": "Haier",
-    "price": null,
-    "image": "images/kitchen%20aplliances/cookers/Haier%205%20Gas%2060X90%20Cooker%20with%20Electric%20Oven%20%E2%80%93%20HCR6050DES.jpeg",
-    "stock": true,
-    "featured": false,
-    "specs": {
-      "type": "Cooker",
-      "model": "HCR6050DES",
-      "size": "60X90"
+      "size": "60X90",
+      "burnerConfiguration": "5 Gas",
+      "OvenType": "Spacious electric long multifunction oven with a convection/turbo fan, thermostat, interior light, and shelf support rails.",
+      "Warranty": "2 years"
     }
   },
   {
     "id": "cooker-haier-haier-50-60-gas-cooker-with-electric-oven-3-gas-1-electric-plate-matte-black-hre5313cdtmb",
     "name": "Haier 50Ã—60 Gas Cooker with Electric Oven â€“ 3 Gas + 1 Electric Plate, Matte Black HRE5313CDTMB",
-    "description": "",
+    "description": " is a compact, matte-black free-standing cooker featuring a hybrid cooktop and a spacious electric oven",
     "category": "kitchen-appliances",
     "brand": "Haier",
-    "price": null,
+    "price": 46000,
     "image": "images/kitchen%20aplliances/cookers/Haier%2050%C3%9760%20Gas%20Cooker%20with%20Electric%20Oven%20%E2%80%93%203%20Gas%20%2B%201%20Electric%20Plate%2C%20Matte%20Black%20HRE5313CDTMB.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "HRE5313CDTMB",
-      "burnerConfiguration": "3 Gas + 1 Electric"
+      "burnerConfiguration": "3 Gas + 1 Electric",
+      "size": "50X60",
+      "OvenType": " Electric oven with a 62-liter capacity, rear heating convection fan, interior oven light, and an easy-clean enamel interior.",
+      "Build": "Stainless steel body with a matte black (MB) finish ignition.",
+      "Warranty": "2 years"
     }
   },
   {
     "id": "cooker-simfer-simfer-cooker-3-gas-1-electric-f6316sewim-inox-grey",
     "name": "SIMFER Cooker 3 Gas + 1 Electric - F6316SEWIM, Inox Grey",
-    "description": "",
+    "description": " freestanding hybrid cooker designed for flexible everyday cooking. It pairs three gas burners (including a high-heat SABAF wok burner) with one electric hotplate and a multi-function electric oven.",
     "category": "kitchen-appliances",
     "brand": "Simfer",
-    "price": null,
+    "price": 59995,
     "image": "images/kitchen%20aplliances/cookers/SIMFER%20Cooker%203%20Gas%20%2B%201%20Electric%20-%20F6316SEWIM%2C%20Inox%20Grey.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "F6316SEWIM",
-      "burnerConfiguration": "3 Gas + 1 Electric"
+      "size": "50X60",
+      "burnerConfiguration": "3 Gas + 1 Electric",
+      "OvenType": "Electric oven with 6 functions (0+6), complete with a turbo fan for even heat distribution, turnspit, and thermostat.",
+      "Build": "nox Grey stainless steel finish, protective tempered glass top lid, double-glazed removable glass oven door, and a bottom storage compartment/drawer.",
+      "Warranty": "1 year"
     }
   },
   {
     "id": "cooker-simfer-simfer-cooker-3-gas-1-electric-silver-f6311segr",
     "name": "Simfer Cooker 3 Gas + 1 Electric - Silver F6311SEGR",
-    "description": "",
+    "description": " freestanding hybrid cooker designed for flexible everyday cooking. It pairs three gas burners (including a high-heat SABAF wok burner) with one electric hotplate and a multi-function electric oven.",
     "category": "kitchen-appliances",
     "brand": "Simfer",
-    "price": null,
+    "price": 50000,
     "image": "images/kitchen%20aplliances/cookers/Simfer%20Cooker%203%20Gas%20%2B%201%20Electric%20-%20Silver%20F6311SEGR.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "F6311SEGR",
-      "burnerConfiguration": "3 Gas + 1 Electric"
+      "size": "50X60",
+      "burnerConfiguration": "3 Gas + 1 Electric",
+      "OvenType": "Electric oven with 0+3 cooking functions and a black enamel cavity",
+      "Build": "Silver enamel body, thick matt enamel pan supports, glass top lid, and double glass oven door.",
+      "Warranty": "1 year"
     }
   },
   {
     "id": "cooker-von-von-freestanding-cooker-3-gas-1-electric-inox-vcf663175fsx",
     "name": "Von Freestanding Cooker 3 Gas + 1 Electric - Inox VCF663175FSX",
-    "description": "",
+    "description": " is a 60×60 cm hybrid kitchen appliance featuring 3 gas burners (including a wok burner) and 1 electric hotplate, paired with a fan-assisted electric oven.",
     "category": "kitchen-appliances",
     "brand": "VON",
-    "price": null,
+    "price": 55999,
     "image": "images/kitchen%20aplliances/cookers/Von%20Freestanding%20Cooker%203%20Gas%20%2B%201%20Electric%20-%20Inox%20VCF663175FSX.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
       "model": "VCF663175FSX",
-      "burnerConfiguration": "3 Gas + 1 Electric"
+      "size": "60X60",
+      "burnerConfiguration": "3 Gas + 1 Electric",
+      "OvenType": "Fan-assisted electric oven with 7 functions and an easy-to-clean enamel cavity with side rails",
+      "Build": " Inox (Stainless steel finish)",
+      "Acessories": " 1 baking tray, 1 grid rack, and a diamond round tray",
+      "Warranty": "1 year"
     }
   },
   {
     "id": "cooker-von-von-freestanding-cooker-4-gas-2-electric-burners-cast-iron-pan-support-flame-failure",
     "name": "VON Freestanding Cooker â€“ 4 Gas + 2 Electric Burners, Cast Iron Pan Support, Flame Failure",
-    "description": "",
+    "description": "VCF964261FSY and VCF964271FSX, is a wide, dual-fuel kitchen appliance built for large households and heavy daily cooking. It combines the fast heat control of gas with the reliability of electric hotplates and a spacious electric oven",
     "category": "kitchen-appliances",
     "brand": "VON",
-    "price": null,
+    "price": 90000,
     "image": "images/kitchen%20aplliances/cookers/VON%20Freestanding%20Cooker%20%E2%80%93%204%20Gas%20%2B%202%20Electric%20Burners%2C%20Cast%20Iron%20Pan%20Support%2C%20Flame%20Failure.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
-      "burnerConfiguration": "4 Gas + 2 Electric"
+      "size": "50X60",
+      "burnerConfiguration": "4 Gas + 2 Electric",
+      "OvenType": " Electric oven with 6 functions, silver enamel cavity, and an easy-to-clean enamel panel.",
+      "Build": "0x60 cm dimensions, glass lid, double glass oven door with easy removal for cleaning, flap drawer, and a built-in bottle/cylinder compartment",
+      "Acessories": " Baking tray, grid, round tray, and a coffee adapter.",
+      "Warranty": "1 year"
     }
   },
   {
     "id": "cooker-von-von-freestanding-cooker-5-gas-burners-enamel-pan-support-vcf965031nsk",
     "name": "VON Freestanding Cooker â€“ 5 Gas Burners, Enamel Pan Support VCF965031NSK",
-    "description": "",
+    "description": "VCF965031NSK is a 50×60 cm hybrid kitchen appliance featuring 5 gas burners and an enamel pan support, paired with a fan-assisted electric oven.",
     "category": "kitchen-appliances",
     "brand": "VON",
-    "price": null,
+    "price": 67995,
     "image": "images/kitchen%20aplliances/cookers/VON%20Freestanding%20Cooker%20%E2%80%93%205%20Gas%20Burners%2C%20Enamel%20Pan%20Support%20VCF965031NSK.jpeg",
     "stock": true,
     "featured": false,
     "specs": {
       "type": "Cooker",
-      "model": "VCF965031NSK"
+      "size": "50X60",  
+      "model": "VCF965031NSK",
+      "burnerConfiguration": "5 Gas Burners",
+      "OvenType": "Fan-assisted electric oven with 6 functions and an easy-to-clean enamel cavity with side rails",
+      "Build": "Stainless steel finish, tempered glass lid, double glass oven door, and a bottom storage compartment/drawer.",
+      "Acessories": "1 baking tray, 1 grid rack, and a diamond round tray",
+      "Warranty": "1 year"
     }
   },
   {
     id: "haier-196l-hcf-288sr-ke-chest-freezer",
     name: "Haier 196L HCF-288SR(KE) Chest Freezer, Gray",
-    description: "",
+    description: "The Haier 196L HCF-288SR(KE) Chest Freezer in Gray is a compact, energy-efficient appliance designed to maintain low temperatures and handle unstable power supplies.",
     category: "chest-freezers",
     brand: "Haier",
-    price: null,
+    price: 46495,
     image: "images/chest%20freezers/Haier%20196L%20HCF-288SR(KE)%20Chest%20Freezer%20Gray%20150%20Hours%20Frost%20Stay%20After%20Power%20Outage.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "196L", model: "HCF-288SR(KE)", type: "Chest Freezer" }
+    Dimensions:"845 x 820 x 555 mm",
+    specs: { capacity: "196L", model: "HCF-288SR(KE)", type: "Chest Freezer", color: "Gray", CoolingRetention: "Up to 150 hours (7 days) of frost stay after a power outage", DualFunctionality: "Easily converts between a freezer and a refrigerator mode"},
+    Warranty: "2 years"
   },
   {
     id: "haier-244l-hcf-328kg-inverter-chest-freezer",
     name: "Haier 244L HCF-328KG Inverter Chest Freezer",
-    description: "",
+    description: "The Haier 244L HCF-328KG Inverter Chest Freezer is a convertible, energy-saving appliance designed for homes and commercial spaces in Kenya. ",
     category: "chest-freezers",
     brand: "Haier",
-    price: null,
+    price: 59995,
     image: "images/chest%20freezers/Haier%20244L%20Inverter%20Chest%20Freezer%20HCF-328KG%20Energy%20Saving%20Exper.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "244L", model: "HCF-328KG", type: "Inverter Chest Freezer" }
+    Dimensions:"940 × 620 × 843 mm",
+    specs: { capacity: "244L", model: "HCF-328KG", type: "Inverter Chest Freezer",CoolingRetention: "Up to 150 hours (7 days) of frost/cold retention during a power outage"},
+    Warranty:"2 years",
   },
   {
     id: "haier-300l-hcf-368kg-inverter-chest-freezer",
     name: "Haier 300L HCF-368KG Inverter Chest Freezer",
-    description: "",
+    description: "The Haier 300L HCF-368KG Inverter Chest Freezer is an energy-efficient, high-capacity appliance designed for homes, shops, and commercial use.",
     category: "chest-freezers",
     brand: "Haier",
-    price: null,
+    price: 69995,
     image: "images/chest%20freezers/Haier%20300L%20Inverter%20Chest%20Freezer%20HCF-368KG%20Energy%20Saving%20Expert.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "300L", model: "HCF-368KG", type: "Inverter Chest Freezer" }
+    Dimensions:"1110 x 620 x 843 mm",
+    specs: { capacity: "300L", model: "HCF-368KG", type: "Inverter Chest Freezer",CoolingRetention: "Up to 150 hours (7 days) of frost/cold retention during a power outage",ConvertibleFunction: "can switch between freezer and refrigerator modes"},
+    Warranty: "2 years"
   },
   {
     id: "haier-417l-hcf-478vs-ke-chest-freezer",
     name: "Haier 417L HCF-478VS(KE) Chest Freezer, Gray",
-    description: "",
+    description: "The Haier 417L HCF-478VS(KE) Chest Freezer in Gray is a convertible chest freezer featuring a Flex Inverter compressor and up to 150 hours of cooling retention after a power outage.",
     category: "chest-freezers",
     brand: "Haier",
-    price: null,
+    price: 104995,
     image: "images/chest%20freezers/Haier%20417L%20Chest%20Freezer%20Gray%20HCF-478VS(KE)%20150%20Hours%20Frost%20Stay%20After%20Power%20Outage.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "417L", model: "HCF-478VS(KE)", type: "Chest Freezer" }
+    Dimensions:"845 x 1410 x 745 mm",
+    specs: { capacity: "417L", model: "HCF-478VS(KE)", type: "Chest Freezer",CoolingRetention: "Up to 150 hours (7 days) of frost/cold retention during a power outage",AdditionalFeatures: "Mechanical control, lock and key, external handle, external condenser, removable gasket, and LED lighting."},
+    Warranty: "2 years"
   },
   {
     id: "haier-519l-hcf-588vs-ke-chest-freezer",
     name: "Haier 519L HCF-588VS(KE) Chest Freezer, Gray",
-    description: "",
+    description: "The Haier 519L HCF-588VS(KE) Chest Freezer in Gray is a high-capacity, energy-efficient commercial and household chest freezer available in Kenya",
     category: "chest-freezers",
     brand: "Haier",
-    price: null,
+    price: 102999,
     image: "images/chest%20freezers/Haier%20519L%20Chest%20Freezer%20Gray%20HCF-588VS(KE)%2C%20150%20Hours%20Frost%20Stay%20After%20Power%20Outage.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "519L", model: "HCF-588VS(KE)", type: "Chest Freezer" }
+    Dimensions:"845 x 1650 x 745 mm",
+    specs: { capacity: "519L", model: "HCF-588VS(KE)", type: "Chest Freezer",CoolingRetention: "Up to 150 hours (7 days) of frost/cold retention during a power outage",AdditionalFeatures: "Mechanical control, lock and key, external handle, external condenser, and a removable gasket."},
+    Warranty: "2 years"
   },
   {
     id: "haier-97l-hcf-148sr-ke-inverter-chest-freezer",
     name: "Haier 97L HCF-148SR(KE) Inverter Chest Freezer",
-    description: "",
+    description: "The Haier 97L HCF-148SR(KE) Inverter Chest Freezer is a compact, energy-efficient appliance equipped with smart inverter technology and convertible cooling functions.",
     category: "chest-freezers",
     brand: "Haier",
-    price: null,
+    price: 33999,
     image: "images/chest%20freezers/Haier%2097L%20Chest%20Freezer%20With%20Inverter%20%E2%80%93%20HCF-148SR(KE).jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "97L", model: "HCF-148SR(KE)", type: "Inverter Chest Freezer" }
+    Dimensions:"845 x 490 x 545 mm",
+    specs: { capacity: "97L", model: "HCF-148SR(KE)", type: "Inverter Chest Freezer",CoolingRetention: "Up to 150 hours (7 days) of frost/cold retention during a power outage",ConvertibleDesign: "Can switch between freezer and refrigerator modes, making it versatile for different storage needs.",Build: "Grey exterior, aluminium inner liner, built-in handle, lock and key, removable gasket, and interior LED lighting."},
+    Warranty: "2 years"
   },
   {
     id: "hisense-145l-fc-18dt4sa-inverter-chest-freezer",
     name: "Hisense 145L FC-18DT4SA Inverter Chest Freezer, Gray",
-    description: "",
+    description: "The Hisense 145L FC-18DT4SA Inverter Chest Freezer in Gray is a compact, energy-saving appliance equipped with smart inverter technology and convertible cooling functions.",
     category: "chest-freezers",
     brand: "Hisense",
-    price: null,
+    price: 46999,
     image: "images/chest%20freezers/Hisense%20Inverter%20Chest%20Freezer%2C%20145L%20-%20Grey%20FC-18DT4SA.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "145L", model: "FC-18DT4SA", type: "Inverter Chest Freezer", color: "Gray" }
+    specs: { capacity: "145L", model: "FC-18DT4SA", type: "Inverter Chest Freezer", color: "Gray",Compressor: "Durable Inverter Compressor (adjusts cooling output automatically based on internal load and conditions)",MyFreshChoice: "Features a freezer-to-fridge conversion mode, allowing you to switch the unit between a freezer and a refrigerator depending on your storage needs." },
+    Warranty: "2 years"
   },
   {
     id: "hisense-200l-fc-26dt4st-inverter-chest-freezer",
     name: "Hisense 200L FC-26DT4ST Inverter Chest Freezer, Gray",
-    description: "",
+    description: "The Hisense 200L FC-26DT4ST Inverter Chest Freezer in Gray is a compact, energy-saving appliance equipped with smart inverter technology and convertible cooling functions.", 
     category: "chest-freezers",
     brand: "Hisense",
-    price: null,
+    price: 53995,
     image: "images/chest%20freezers/Hisense%20Inverter%20Chest%20Freezer%2C%20200L%20-%20Grey%20FC-26DT4ST.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "200L", model: "FC-26DT4ST", type: "Inverter Chest Freezer", color: "Gray" }
+    specs: { capacity: "200L", model: "FC-26DT4ST", type: "Inverter Chest Freezer", color: "Gray",Compressor: " Smart inverter technology continuously adjusts cooling output based on internal conditions",PowerRetention: "Keeps internal temperatures cold (around 0 °C) for up to 135 hours after a power outage.",Design: "Single-door grey finish, mechanical temperature control, LED lighting, removable basket with soft-round corners, and recessed handles"},
+    Warranty: "2 years"
   },
   {
     id: "hisense-250l-fc-31dt4sa-inverter-chest-freezer",
     name: "Hisense 250L FC-31DT4SA Inverter Chest Freezer, Gray",
-    description: "",
+    description: "The Hisense 250L FC-31DT4SA Inverter Chest Freezer in Gray is a high-capacity, energy-efficient appliance designed for homes and commercial spaces in Kenya. It features smart inverter technology, convertible cooling functions, and a range of user-friendly design elements.",
     category: "chest-freezers",
     brand: "Hisense",
-    price: null,
+    price: 41995,
     image: "images/chest%20freezers/Hisense%20Inverter%20Chest%20Freezer%2C%20250L%20-%20Grey%20FC-31DT4SA.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "250L", model: "FC-31DT4SA", type: "Inverter Chest Freezer", color: "Gray" }
+    specs: { capacity: "250L", model: "FC-31DT4SA", type: "Inverter Chest Freezer", color: "Gray",Compressor: "Durable Smart Inverter Compressor that continuously adjusts cooling output based on internal conditions",MyFreshChoice: "Features a freezer-to-fridge conversion mode, allowing you to switch the unit between a freezer and a refrigerator depending on your storage needs.",PowerRetention: " Retains cold for up to 160 hours during power outages.",Design: "eatures sliding interior glass doors to reduce cold loss, a smooth-sliding movable basket,Bright LED interior lighting, an aluminum inner liner for fast cooling, a hovering door, castor wheels for mobility, and a lockable lid"},
+    Warranty: "2 years"
   },
   {
     id: "hisense-300l-fc-40dd4sa-inverter-chest-freezer",
     name: "Hisense 300L FC-40DD4SA Inverter Chest Freezer, Gray",
-    description: "",
+    description: "The Hisense 300L FC-40DD4SA Inverter Chest Freezer in Gray is a high-capacity, energy-efficient appliance designed for homes and commercial spaces in Kenya. It features smart inverter technology, convertible cooling functions, and a range of user-friendly design elements.",
     category: "chest-freezers",
     brand: "Hisense",
-    price: null,
+    price: 65999,
     image: "images/chest%20freezers/Hisense%20Inverter%20Chest%20Freezer%2C%20300L%20-%20Grey%20FC-40DD4SA.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "300L", model: "FC-40DD4SA", type: "Inverter Chest Freezer", color: "Gray" }
+    Dimensions:"1102 × 577 × 847 mm",
+    specs: { capacity: "300L", model: "FC-40DD4SA", type: "Inverter Chest Freezer", color: "Gray",Compressor: "Inverter energy-saving compressor design",PowerRetention: " Retains cold for up to 160 hours during power outages.",Design: "eatures sliding interior glass doors to reduce cold loss, a smooth-sliding movable basket,Bright LED interior lighting, an aluminum inner liner for fast cooling, a hovering door, castor wheels for mobility, and a lockable lid"},
+    Warranty: "2 years"
   },
   {
     id: "tcl-190l-f190cf-chest-freezer",
     name: "TCL F190CF 190L Chest Freezer",
-    description: "",
+    description: "The TCL F190CF 190L Chest Freezer is a compact and energy-efficient appliance designed for households and small commercial spaces. It features dual-zone cooling, energy efficiency, and smart functionalities to meet the needs of users.",
     category: "chest-freezers",
     brand: "TCL",
-    price: null,
+    price: 29999,
     image: "images/chest%20freezers/TCL%20F190CF%20190L%20Chest%20Freezer.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "190L", model: "F190CF", type: "Chest Freezer" }
+    specs: { capacity: "190L", model: "F190CF", type: "Chest Freezer",DualzoneCooling: "Separate freezer and fridge compartments with direct cooling ensure efficient temperature zones.",EnergyEfficiency: "Designed to consume less energy while maintaining optimal cooling performance.",SmartFeatures: "Includes egg tray, door lock, fast-freeze, and automatic cooling compensation." },
+    Warranty: "2 years"
   },
   {
     id: "tcl-260l-f260cf-chest-freezer",
     name: "TCL F260CF 260L Chest Freezer",
-    description: "",
+    description: "The TCL F260CF 260L Chest Freezer is a high-capacity appliance designed for efficient food storage. It features dual-zone cooling, energy efficiency, and smart functionalities to meet the needs of households and commercial spaces.",
     category: "chest-freezers",
     brand: "TCL",
-    price: null,
+    price: 32999,
     image: "images/chest%20freezers/TCL%20F260CF%20260L%20Chest%20frrezer.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "260L", model: "F260CF", type: "Chest Freezer" }
+    specs: { capacity: "260L", model: "F260CF", type: "Chest Freezer",  DualzoneCooling: "Separate freezer and fridge compartments with direct cooling ensure efficient temperature zones.",EnergyEfficiency: "Designed to consume less energy while maintaining optimal cooling performance.",SmartFeatures: "Includes egg tray, door lock, fast-freeze, and automatic cooling compensation.", BuiltInLEDLighting: "Enhances visibility and makes it easy to find items." },
+    Warranty: "2 years"
   },
   {
     id: "von-142l-vafc15dkg-dh-chest-freezer",
     name: "VON 142L VAFC15DKG DH Chest Freezer",
-    description: "",
+    description: "The VON 142L VAFC15DKG DH Chest Freezer is a versatile appliance that can switch between freezer and refrigerator modes, making it suitable for various storage needs. It features fast-freeze technology, a fully tropicalized design, and comes with essential accessories for convenient use.",
     category: "chest-freezers",
     brand: "VON",
-    price: null,
+    price: 42995,
     image: "images/chest%20freezers/VON%20Chest%20Freezer-%20142L%20VAFC15DKG%20DH.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "142L", model: "VAFC15DKG DH", type: "Chest Freezer" }
+    Dimensions:"706 x 550 x 850 mm",
+    specs: { capacity: "142L", model: "VAFC15DKG DH", type: "Chest Freezer", DualFunctionality: "Can switch between freezer and refrigerator modes, making it versatile for different storage needs.",FastFreeze: "Designed for rapid cooling and freezing",AccessoriesIncluded: "1 storage basket and a cool/ice pack",Build: " Fully tropicalized design, LED interior light, mechanical control, lockable lid with an external handle, front defrost drainage, and castor wheels for mobility" },
+    Warranty: "2 years"
   },
   {
     id: "von-198l-vafc20dhg-chest-freezer",
     name: "VON 198L VAFC20DHG Chest Freezer",
-    description: "",
+    description: "The VON 198L VAFC20DHG Chest Freezer is a reliable storage solution with a generous capacity and efficient cooling technology.",
     category: "chest-freezers",
     brand: "VON",
-    price: null,
+    price: 34999,
     image: "images/chest%20freezers/VON%20Chest%20Freezer-%20198L%20VAFC20DHG.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "198L", model: "VAFC20DHG", type: "Chest Freezer" }
+    specs: { capacity: "198L", model: "VAFC20DHG", type: "Chest Freezer",Design: ": Grey/silver finish, single door with an external handle and lockable latch, interior LED light, white inner lining, and sliding interior glass to retain cold air",Mobility: " Built-in castor wheels, front defrost drainage, mechanical controls, and thick thermal insulation (CFC-free)",CoolingTechnology: "Efficient cooling technology for consistent low temperatures" },
+    Warranty: "2 years"
   },
   {
     id: "von-371l-vafc37dhg-chest-freezer",
     name: "VON 371L VAFC37DHG Chest Freezer",
-    description: "",
+    description: "The VON 371L VAFC37DHG Chest Freezer offers exceptional storage capacity and advanced cooling technology for long-term food preservation.",
     category: "chest-freezers",
     brand: "VON",
-    price: null,
+    price: 79999,
     image: "images/chest%20freezers/VON%20Chest%20Freezer-%20371L%20VAFC37DHG.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "371L", model: "VAFC37DHG", type: "Chest Freezer" }
+    Dimensions:"1300 x 700 x 845 mm",
+    specs: { capacity: "371L", model: "VAFC37DHG", type: "Chest Freezer",Design: "Grey/silver finish, single door with an external handle and lockable latch, interior LED light, white inner lining, and sliding interior glass to retain cold air",Mobility: "  Front defrost drainage, mechanical control, lockable lid, exterior handle, castor wheels for easy moving, and low noise operation",CoolingTechnology: "Efficient cooling technology for consistent low temperatures" },
+    Warranty: "2 years"
   },
   {
     id: "von-204l-vuf-204nrag-upright-freezer",
     name: "VON 204L VUF-204NRAG Upright Freezer",
-    description: "",
+    description: "The VON 204L VUF-204NRAG Upright Freezer is a compact and efficient appliance designed for households and small commercial spaces. It features a vertical design, energy-efficient cooling technology, and user-friendly controls.",
     category: "chest-freezers",
     brand: "VON",
-    price: null,
+    price: 70000,
     image: "images/chest%20freezers/VON%20Upright%20Freezer-%20204L%20VUF-204NRAG.jpeg",
     stock: true,
     featured: false,
-    specs: { capacity: "204L", model: "VUF-204NRAG", type: "Upright Freezer" }
+    Dimensions:"545x 600 x 1705 mm",
+    specs: { capacity: "204L", model: "VUF-204NRAG", type: "Upright Freezer",Design: " Reversible door and recessed handle design",CoolingTechnology: " Thick thermal insulation with a 2-star energy-saving rating",UserControls: " Internal digital temperature control and a super freeze function for rapid freezing." },
+    Warranty: "2 years"
   }
 ];
 
@@ -1791,37 +1761,42 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-001",
     name: "BLACK+DECKER 3 in 1 Mixer Grinder 750W",
+    description: "The BLACK+DECKER 3 in 1 Mixer Grinder 750W (MG750-B5) is a heavy-duty kitchen appliance designed for multi-purpose blending, wet/dry grinding, and chutney preparation.",
     category: "blenders",
     brand: "BLACK+DECKER",
-    price: null,
+    price: 25000,
     condition: "New",
     image: "/images/home-appliances/blenders/BLACK+DECKER 3 in 1 Mixer Grinder 750W MG750-B5",
     specs: {
       Power: "750W",
       Type: "3-in-1 Mixer Grinder",
-      Model: "MG750-B5"
+      Model: "MG750-B5",
+      SpeedControls:"3 speed settings plus a Pulse function"
     }
   },
   {
     id: "home-002",
     name: "BLACK+DECKER Blender with Grinder 1.5L",
+    description: "The BLACK+DECKER Blender with Grinder 1.5L (BX530-B5) is a versatile kitchen appliance designed for blending, grinding, and mixing various ingredients with ease.",
     category: "blenders",
     brand: "BLACK+DECKER",
-    price: null,
+    price: 5500,
     condition: "New",
     image: "/images/home-appliances/blenders/BLACK+DECKER Blender with Grinder, 1.5L - 500W BX530-B5",
     specs: {
       Power: "500W",
       Capacity: "1.5L",
-      Model: "BX530-B5"
+      Model: "BX530-B5",
+      SpeedSettings: "2 speed controls plus a pulse function for texture precision."
     }
   },
   {
     id: "home-003",
     name: "MIDEA 1.5L Plastic Jug Blender with Grinder",
+    description: "The MIDEA 1.5L Plastic Jug Blender with Grinder (BL2516A) is a versatile kitchen appliance designed for blending, grinding, and mixing various ingredients with ease.",
     category: "blenders",
     brand: "MIDEA",
-    price: null,
+    price: 6500,
     condition: "New",
     image: "/images/home-appliances/blenders/MIDEA 1.5L Plastic Jug Blender with Grinder (BL2516A)",
     specs: {
@@ -1833,14 +1808,17 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-004",
     name: "MOULINEX 1600W Blender LM91HD27",
+    description: "The MOULINEX 1600W Blender LM91HD27 is a high-performance kitchen appliance designed for efficient blending and mixing.",
     category: "blenders",
     brand: "MOULINEX",
-    price: null,
+    price: 35000,
     condition: "New",
     image: "/images/home-appliances/blenders/MOULINEX 1600W LM91HD27",
     specs: {
+      Capacity: "2.6L",
       Power: "1600W",
-      Model: "LM91HD27"
+      Model: "LM91HD27",
+      ProgramsControl: "5 automatic programs"
     }
   },
   {
@@ -1848,13 +1826,14 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Midea Blender 1.5L 600W with Grinder",
     category: "blenders",
     brand: "MIDEA",
-    price: null,
+    price: 6000,
     condition: "New",
     image: "/images/home-appliances/blenders/Midea Blender 1.5L 600w – With Grinder MJ-BL6014W1",
     specs: {
       Power: "600W",
       Capacity: "1.5L",
-      Model: "MJ-BL6014W1"
+      Model: "MJ-BL6014W1",
+      SpeedSettings:"Multi-speed or 2-speed controls plus a pulse function"
     }
   },
   {
@@ -1862,7 +1841,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Midea Blender 1.5L 700W",
     category: "blenders",
     brand: "MIDEA",
-    price: null,
+    price: 6000,
     condition: "New",
     image: "/images/home-appliances/blenders/Midea Blender 1.5L 700W- MJ-BL7001AW",
     specs: {
@@ -1874,14 +1853,16 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-007",
     name: "Moulinex 500W Blender Grinder and Grater",
+    description: "The Moulinex 500W Blender Grinder and Grater (LM242B28) is a multi-functional kitchen appliance designed for blending, grinding, and grating. It is suitable for preparing smoothies, sauces, chutneys, and more.",
     category: "blenders",
     brand: "MOULINEX",
-    price: null,
+    price: 11000,
     condition: "New",
     image: "/images/home-appliances/blenders/Moulinex 500W 1.75Ltr Blender Grinder & Grater LM242B28",
     specs: {
       Power: "500W",
       Capacity: "1.75L",
+      Model: "LM242B28",
       Functions: "Blending, grinding and grating"
     }
   },
@@ -1890,27 +1871,30 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Moulinex 1200W High Speed Blender",
     category: "blenders",
     brand: "MOULINEX",
-    price: null,
+    price: 19999,
     condition: "New",
     image: "/images/home-appliances/blenders/Moulinex 1200W High Speed Blender LM88HD27",
     specs: {
       Power: "1200W",
       Type: "High-speed blender",
-      Model: "LM88HD27"
+      Model: "LM88HD27",
+      ControlsPrograms:"Touchscreen interface featuring automatic pre-set programs (Smoothie, Ice Crushing, and Auto-Clean) plus manual speed control."
     }
   },
   {
     id: "home-009",
     name: "NutriBullet 900 Pro 900W 12 Piece Set",
+    description: "The NutriBullet 900 Pro 900W 12 Piece Set (Model: NB9-1212) is a high-powered personal blender and nutrient extractor designed for smoothies, shakes, and food preparation.",
     category: "blenders",
     brand: "NUTRIBULLET",
-    price: null,
+    price: 24000,
     condition: "New",
     image: "/images/home-appliances/blenders/NutriBullet 900 Pro 900W, 12 Piece Set - champagne NB9-1212",
     specs: {
       Power: "900W",
       Set: "12 pieces",
-      Model: "NB9-1212"
+      Model: "NB9-1212",
+      SpeedSetting:"Single-speed, push-down operation for simple, fast use"
     }
   },
   {
@@ -1918,7 +1902,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "NutriBullet Full Size Blender Combo 1000W",
     category: "blenders",
     brand: "NUTRIBULLET",
-    price: null,
+    price: 25000,
     condition: "New",
     image: "/images/home-appliances/blenders/NutriBullet Full Size Blender Combo 1000W NBC-0910B",
     specs: {
@@ -1932,7 +1916,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "NutriBullet Grey 9 Piece Blender Set",
     category: "blenders",
     brand: "NUTRIBULLET",
-    price: null,
+    price: 13995,
     condition: "New",
     image: "/images/home-appliances/blenders/NutriBullet Grey 9 Piece NBR-1212M",
     specs: {
@@ -1946,10 +1930,11 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON 1000W Glass Jar Blender",
     category: "blenders",
     brand: "VON",
-    price: null,
+    price: 4000,
     condition: "New",
     image: "/images/home-appliances/blenders/VON BLENDER 1000W GLASS JAR STAINLESS STEEL VBG10026BLX",
     specs: {
+      Capacity: "1.7-liter glass jar",
       Power: "1000W",
       Jar: "Glass",
       Model: "VBG10026BLX"
@@ -1960,13 +1945,15 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON Plastic Jar Blender 350W",
     category: "blenders",
     brand: "VON",
-    price: null,
+    price: 4500,
     condition: "New",
     image: "/images/home-appliances/blenders/VON Plastic Jar Blender - 350W VBP351NLW",
     specs: {
+      Capacity: "1.2-litre durable plastic jar",
       Power: "350W",
       Jar: "Plastic",
-      Model: "VBP351NLW"
+      Model: "VBP351NLW",
+      SpeedSettings: "2 speed levels plus a pulse function"
     }
   },
   {
@@ -1974,13 +1961,14 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON VBG601BLX Glass Jar Blender",
     category: "blenders",
     brand: "VON",
-    price: null,
+    price: 7000,
     condition: "New",
     image: "/images/home-appliances/blenders/VON VBG601BLX Glass Jar Blender - 600W",
     specs: {
       Power: "600W",
       Jar: "Glass",
-      Model: "VBG601BLX"
+      Model: "VBG601BLX",
+      SpeedSettings:"5 speeds with a pulse function"
     }
   },
 
@@ -1990,7 +1978,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Ramtons Grey Dry Iron RM-692",
     category: "irons",
     brand: "RAMTONS",
-    price: null,
+    price: 2000,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Ramtons GREY DRY IRON - RM 692",
     specs: {
@@ -2004,7 +1992,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Ramtons Red Steam Iron RM-584",
     category: "irons",
     brand: "RAMTONS",
-    price: null,
+    price: 3200,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Ramtons RED STEAM IRON - RM 584",
     specs: {
@@ -2018,7 +2006,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Ramtons Steam Iron Non-Stick Soleplate RM-694",
     category: "irons",
     brand: "RAMTONS",
-    price: null,
+    price: 2500,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Ramtons STEAM IRON - NON STICK SOLE PLATE - RM 694",
     specs: {
@@ -2032,7 +2020,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 1200W Steam Iron FV1941M0",
     category: "irons",
     brand: "TEFAL",
-    price: null,
+    price: 3000,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Tefal 1200W Steam Iron Blue and White FV1941M0",
     specs: {
@@ -2046,7 +2034,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 2400W Steam Iron FV2831M0",
     category: "irons",
     brand: "TEFAL",
-    price: null,
+    price: 5500,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Tefal 2400W Steam Iron FV2831M0",
     specs: {
@@ -2060,7 +2048,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 2400W Steam Iron FV5715M0",
     category: "irons",
     brand: "TEFAL",
-    price: null,
+    price: 9000,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Tefal 2400W Steam Iron FV5715M0",
     specs: {
@@ -2074,13 +2062,14 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 2800W Smart Protect Plus Steam Iron",
     category: "irons",
     brand: "TEFAL",
-    price: null,
+    price: 12999,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Tefal 2800W Smart Protect Plus Steam Iron Blue and Silver FV6872M0",
     specs: {
       Power: "2800W",
       Range: "Smart Protect Plus",
-      Model: "FV6872M0"
+      Model: "FV6872M0",
+      WaterTank: "270 ml capacity with a large fill opening"
     }
   },
   {
@@ -2088,27 +2077,28 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 3100W Steam Iron Gold and Black",
     category: "irons",
     brand: "TEFAL",
-    price: null,
+    price: 16000,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Tefal 3100W Steam Iron Gold & Black FV9845M0",
     specs: {
       Power: "3100W",
       Type: "Steam iron",
-      Model: "FV9845M0"
+      Model: "FV9845M0",
+      WaterTank : "350ml"
     }
   },
   {
     id: "home-023",
-    name: "Tefal Steam Iron FV9845 Gold and Black",
+    name: "Tefal 3100W Steam Iron Gold and Black FV9845M0",
     category: "irons",
     brand: "TEFAL",
-    price: null,
+    price: 15990,
     condition: "New",
     image: "/images/home-appliances/iron-boxes/Tefal Iron Fv9845 Steam Gold & Blk",
     specs: {
       Type: "Steam iron",
       Colour: "Gold and black",
-      Model: "FV9845"
+      Model: "FV9845M0"
     }
   },
 
@@ -2118,7 +2108,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Midea 1.7L Stainless Steel Kettle MK-17S32A2",
     category: "kettles",
     brand: "MIDEA",
-    price: null,
+    price: 3000,
     condition: "New",
     image: "/images/home-appliances/kettles/Midea 1.7L Kettle Stainless Steel MK-17S32A2",
     specs: {
@@ -2132,7 +2122,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Midea 1.7L Stainless Steel Kettle 2200W",
     category: "kettles",
     brand: "MIDEA",
-    price: null,
+    price: 3500,
     condition: "New",
     image: "/images/home-appliances/kettles/Midea Kettle 2200 Watts 1.7 Litres Stainless Steel – MEK-170M0B-SS",
     specs: {
@@ -2146,11 +2136,12 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Midea White Electric Kettle MK-SH15Colour102A2",
     category: "kettles",
     brand: "MIDEA",
-    price: null,
+    price: 3500,
     condition: "New",
     image: "/images/home-appliances/kettles/Midea White Electric Kettle MK-SH15Colour102A2",
     specs: {
       Type: "Electric kettle",
+      Capacity: "1.5L",
       Colour: "White",
       Model: "MK-SH15Colour102A2"
     }
@@ -2160,10 +2151,11 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal Electric Kettle KO260865",
     category: "kettles",
     brand: "TEFAL",
-    price: null,
+    price: 4500,
     condition: "New",
     image: "/images/home-appliances/kettles/Tefal Electric Kettle KO260865",
     specs: {
+      Capacity: "1.7 Liters",
       Type: "Electric kettle",
       Model: "KO260865"
     }
@@ -2173,13 +2165,14 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 1.7L Breakfast Maker Kettle 2400W",
     category: "kettles",
     brand: "TEFAL",
-    price: null,
+    price: 6000,
     condition: "New",
     image: "/images/home-appliances/kettles/Tefal Kettle 1.7L Breakfast Maker 2400W KO2M0B27",
     specs: {
       Power: "2400W",
       Capacity: "1.7L",
-      Model: "KO2M0B27"
+      Model: "KO2M0B27",
+      Filter:"Removable and washable anti-scale filter to keep water clean"
     }
   },
   {
@@ -2187,12 +2180,14 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "Tefal 1.7L Kettle KI700827",
     category: "kettles",
     brand: "TEFAL",
-    price: null,
+    price: 5999,
     condition: "New",
     image: "/images/home-appliances/kettles/Tefal Kettle 1.7L KI700827",
     specs: {
       Capacity: "1.7L",
-      Model: "KI700827"
+      Model: "KI700827",
+      Lighting:"Stylish blue ambient lighting",
+      BodyMaterial:"Heat-resistant glass with stainless steel accents"
     }
   },
   {
@@ -2200,7 +2195,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON Corded Kettle 1.7L VSKC17BVK",
     category: "kettles",
     brand: "VON",
-    price: null,
+    price: 2500,
     condition: "New",
     image: "/images/home-appliances/kettles/VON Corded Kettle - 1.7L VSKC17BVK",
     specs: {
@@ -2214,7 +2209,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON Corded Kettle 1.7L VSKC17BVW",
     category: "kettles",
     brand: "VON",
-    price: null,
+    price: 2495,
     condition: "New",
     image: "/images/home-appliances/kettles/VON Corded Kettle - 1.7L VSKC17BVW",
     specs: {
@@ -2228,7 +2223,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON Cordless Kettle 1.7L VKCL17SDK",
     category: "kettles",
     brand: "VON",
-    price: null,
+    price: 3500,
     condition: "New",
     image: "/images/home-appliances/kettles/VON Cordless Kettle - 1.7L VKCL17SDK",
     specs: {
@@ -2242,7 +2237,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     name: "VON Upright Cordless Kettle 1.7L VSKL17BNK",
     category: "kettles",
     brand: "VON",
-    price: null,
+    price: 1800,
     condition: "New",
     image: "/images/home-appliances/kettles/VON Upright Cordless Kettle - 1.7L VSKL17BNK",
     specs: {
@@ -2256,9 +2251,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-034",
     name: "Haier 20L Digital Microwave Oven HMW20DBM",
+    Description: "The Haier 20L Digital Microwave Oven (HMW20DBM) is a compact and efficient kitchen appliance designed for quick heating and cooking of various dishes.",
     category: "microwaves",
     brand: "HAIER",
-    price: null,
+    price: 9999,
     condition: "New",
     image: "/images/home-appliances/microwaves/Haier 20L Digital Microwave Oven HMW20DBM",
     specs: {
@@ -2270,9 +2266,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-035",
     name: "Haier 20L Microwave Oven HMW20MB",
+    Description: "The Haier 20L Microwave Oven (HMW20MB) is a compact and efficient kitchen appliance designed for quick heating and cooking of various dishes.",
     category: "microwaves",
     brand: "HAIER",
-    price: null,
+    price: 10500,
     condition: "New",
     image: "/images/home-appliances/microwaves/Haier 20L Microwave Oven – HMW20MB",
     specs: {
@@ -2284,9 +2281,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-036",
     name: "Haier 25L Built-in Microwave HBMW25LBG",
+    Description: "The Haier 25L Built-in Microwave (HBMW25LBG) is a sleek and modern kitchen appliance designed for efficient heating and cooking.",
     category: "microwaves",
     brand: "HAIER",
-    price: null,
+    price: 36000,
     condition: "New",
     image: "/images/home-appliances/microwaves/Haier 25L Built-in Microwave – HBMW25LBG",
     specs: {
@@ -2298,9 +2296,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-037",
     name: "Haier 28L Digital Microwave Oven HMW28DBM",
+    Description: "The Haier 28L Digital Microwave Oven (HMW28DBM) is a versatile kitchen appliance that offers a spacious interior and advanced digital controls for efficient cooking and reheating.",
     category: "microwaves",
     brand: "HAIER",
-    price: null,
+    price: 18999,
     condition: "New",
     image: "/images/home-appliances/microwaves/Haier 28L Digital Microwave Oven – HMW28DBM",
     specs: {
@@ -2312,9 +2311,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-038",
     name: "Haier 34L Built-in Microwave with Grill",
+    Description: "The Haier 34L Built-in Microwave with Grill (HBMW34CB) is a versatile kitchen appliance that combines microwave and grill functions, allowing for efficient cooking and grilling of various dishes.",
     category: "microwaves",
     brand: "HAIER",
-    price: null,
+    price: 10500,
     condition: "New",
     image: "/images/home-appliances/microwaves/Haier 34L Built-in Microwave With Grill HBMW34CB",
     specs: {
@@ -2327,9 +2327,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-039",
     name: "Hisense 20L Solo Microwave Oven Silver",
+    Description: "The Hisense 20L Solo Microwave Oven (H20-MOMS11) in silver is a compact countertop appliance designed for basic heating and cooking tasks.",
     category: "microwaves",
     brand: "HISENSE",
-    price: null,
+    price: 10500,
     condition: "New",
     image: "/images/home-appliances/microwaves/Hisense 20L Microwave Oven Solo - Silver H20-MOMS11",
     specs: {
@@ -2342,9 +2343,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-040",
     name: "Hisense 25L Digital Solo Microwave Black",
+    Description: "The Hisense 25L Digital Solo Microwave Oven (H25-MOBS7H) in black is a compact countertop appliance designed for fast reheating, cooking, and defrosting.",
     category: "microwaves",
     brand: "HISENSE",
-    price: null,
+    price: 12999,
     condition: "New",
     image: "/images/home-appliances/microwaves/Hisense Digital Solo Microwave Oven, 25L - Black H25-MOBS7H",
     specs: {
@@ -2357,9 +2359,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-041",
     name: "Hisense 37L Digital Solo Microwave Black",
+    Description: "The Hisense 37L Digital Solo Microwave Oven (H37-MOBS5X) in black is a spacious countertop appliance designed for fast reheating, cooking, and defrosting.",
     category: "microwaves",
     brand: "HISENSE",
-    price: null,
+    price: 15999,
     condition: "New",
     image: "/images/home-appliances/microwaves/Hisense Digital Solo Microwave Oven, 37L - Black H37-MOBS5X",
     specs: {
@@ -2372,9 +2375,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-042",
     name: "Hisense 20L Mechanical Solo Microwave Silver",
+    Description: "The Hisense 20L Mechanical Solo Microwave Oven (H20-MOMS10) in silver is a compact countertop appliance designed for basic heating and cooking tasks.",
     category: "microwaves",
     brand: "HISENSE",
-    price: null,
+    price: 11955,
     condition: "New",
     image: "/images/home-appliances/microwaves/Hisense Mechanical Solo Microwave Oven, 20L - Silver H20-MOMS10",
     specs: {
@@ -2387,9 +2391,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-043",
     name: "Hisense 30L Solo Microwave Black",
+    Description: "The Hisense 30L Solo Microwave (H30MOBS9H) in black is a spacious countertop appliance designed for fast reheating, cooking, and defrosting",
     category: "microwaves",
     brand: "HISENSE",
-    price: null,
+    price: 14599,
     condition: "New",
     image: "/images/home-appliances/microwaves/Hisense Solo Microwave 30L -Black H30MOBS9H",
     specs: {
@@ -2402,13 +2407,15 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-044",
     name: "LG NeoChef 42L Smart Inverter Microwave",
+    Description: "The LG NeoChef® Microwave Oven is a 42-litre kitchen appliance with Smart Inverter technology and EasyClean™ antibacterial coating, designed for efficient cooking and reheating.", 
     category: "microwaves",
     brand: "LG",
-    price: null,
+    price: 22995,
     condition: "New",
     image: "/images/home-appliances/microwaves/LG Neochef Solo Microwave Oven, 42L - Smart Inverter, EasyClean™ Antibacterial Coating",
     specs: {
       Capacity: "42L",
+      Model: "MS4295CIS",
       Technology: "Smart Inverter",
       Feature: "EasyClean™ coating"
     }
@@ -2416,9 +2423,10 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-045",
     name: "LG NeoChef 30L Microwave MS3032JAS",
+    Description: "The LG NeoChef® Microwave Oven is a 30-litre kitchen appliance with EasyClean™ antibacterial coating and a sleek design, designed for efficient cooking and reheating.",  
     category: "microwaves",
     brand: "LG",
-    price: null,
+    price: 19955,
     condition: "New",
     image: "/images/home-appliances/microwaves/LG Neochef® Microwave Oven, 30L - EasyClean™ Antibacterial Coating, Sleek Design MS3032JAS",
     specs: {
@@ -2430,13 +2438,15 @@ const HOME_APPLIANCE_PRODUCTS = [
   {
     id: "home-046",
     name: "MIKA 20L Digital Solo Microwave Mirror Black",
+    Description: "The MIKA Digital Microwave Oven is a 20-litre kitchen appliance with a digital interface, designed for basic heating and cooking tasks.",
     category: "microwaves",
     brand: "MIKA",
-    price: null,
+    price: 9999,
     condition: "New",
     image: "/images/home-appliances/microwaves/MIKA Microwave Oven, 20L, Digital, Solo, Mirror Black",
     specs: {
       Capacity: "20L",
+      Model: "MMWDSPB2073MB", 
       Type: "Digital solo",
       Colour: "Mirror black"
     }
@@ -2452,6 +2462,7 @@ const HOME_APPLIANCE_PRODUCTS = [
     image: "/images/home-appliances/microwaves/MIKA Microwave Oven, 20L, Digital, Solo, Silver",
     specs: {
       Capacity: "20L",
+      Model: "MMWDSPB2073S",
       Type: "Digital solo",
       Colour: "Silver",
       SafetyBuild: "Features a child lock, durable glass door, and push-button door opening"
@@ -2888,7 +2899,11 @@ window.ALFAJIR_PRODUCTS.push(...HOME_APPLIANCE_PRODUCTS.map((product) => {
 
   return {
     ...product,
-    description: "",
+    description: product.description || "",
+    specs: Object.fromEntries(Object.entries(product.specs || {}).map(([key, value]) => [
+      key === "Model" ? "model" : key,
+      value
+    ])),
     category,
     subcategory,
     image: resolvedImagePath.split("/").map(encodeURIComponent).join("/"),

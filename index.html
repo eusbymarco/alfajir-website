@@ -17,7 +17,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="ALFAJIR home">
-        <img class="brand-image" src="images/ALFAJIR LOGO.jpeg" alt="ALFAJIR logo" />
+        <img class="brand-image" src="images/alfajir-symbol.png" alt="ALFAJIR logo symbol" />
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
@@ -26,26 +26,28 @@
         <span></span>
       </button>
 
-      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
-        <div class="category-navigation" id="category-navigation" aria-label="Shop by category"></div>
-        <button class="cart-button" type="button" aria-label="View cart">
-          <span class="cart-count" aria-live="polite">0</span>
+      <form class="search-form" role="search" aria-label="Search ALFAJIR" action="index.html">
+        <label class="visually-hidden" for="site-search">Search ALFAJIR</label>
+        <input id="site-search" name="q" type="search" placeholder="Search products, brands or models" autocomplete="off">
+        <button type="submit" aria-label="Search">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 9H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
-            <circle cx="10" cy="20" r="1" fill="currentColor" />
-            <circle cx="18" cy="20" r="1" fill="currentColor" />
+            <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7" />
+            <path d="m15.5 15.5 4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
           </svg>
         </button>
-        <form class="search-form" role="search" aria-label="Search ALFAJIR">
-          <label class="visually-hidden" for="site-search">Search ALFAJIR</label>
-          <input id="site-search" name="q" type="search" placeholder="Search" autocomplete="off">
-          <button type="submit" aria-label="Search">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7" />
-              <path d="m15.5 15.5 4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-            </svg>
-          </button>
-        </form>
+      </form>
+
+      <button class="cart-button" type="button" aria-label="View cart" aria-expanded="false" aria-controls="cart-dialog">
+        <span class="cart-count" aria-live="polite">0</span>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 9H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="10" cy="20" r="1" fill="currentColor" />
+          <circle cx="18" cy="20" r="1" fill="currentColor" />
+        </svg>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <div class="category-navigation" id="category-navigation" aria-label="Shop by category"></div>
       </nav>
     </div>
   </header>
@@ -53,14 +55,14 @@
   <main id="main-content">
     <section class="hero" id="home" aria-label="Featured announcements">
       <div class="hero-slides" aria-live="polite">
-        <article class="hero-slide is-active" aria-hidden="false">
-          <img class="hero-image" src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1800&q=85" alt="A television in a contemporary living room" fetchpriority="high">
+        <article class="hero-slide hero-slide-black-friday is-active" aria-hidden="false">
+          <img class="hero-image" src="images/black fiday/ALFAJIR black friday_page-0003.jpg" alt="ALFAJIR Black Friday sale with savings up to 40 percent on selected electronics and appliances" fetchpriority="high">
           <div class="hero-shade"></div>
           <div class="hero-content">
-            <p class="eyebrow"><span></span> SMART HOME</p>
-            <h1>SMART TECHNOLOGY. BETTER LIVING.</h1>
-            <p class="hero-description">Explore TVs, appliances and entertainment for your home.</p>
-            <a class="hero-link" href="#featured">SHOP NOW</a>
+            <p class="eyebrow"><span></span> BLACK FRIDAY SALE</p>
+            <h1>BIGGEST SAVINGS OF THE YEAR</h1>
+            <p class="hero-description">Explore our electronics and home appliance offers.</p>
+            <a class="hero-link" href="#category-sections">SHOP BLACK FRIDAY OFFERS</a>
           </div>
           <p class="slide-note">01 <span>/</span> 03</p>
         </article>
@@ -111,7 +113,7 @@
           <p class="section-kicker">HOT PICKS</p>
           <h2>FEATURED PRODUCTS</h2>
         </div>
-        <a class="view-link" href="#televisions">View All →</a>
+        <a class="view-link" href="#category-sections">Browse Categories →</a>
       </div>
       <div class="product-grid featured-grid" id="featured-products"></div>
     </section>
@@ -162,13 +164,13 @@
           <span class="trust-icon" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none"><path d="M16 3 26 7v7c0 7-4.4 12.2-10 15-5.6-2.8-10-8-10-15V7l10-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m11.5 15.5 3 3 6-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
-          <h3>Warranty</h3>
+          <h3>Warranty Support</h3>
         </article>
         <article class="trust-item">
           <span class="trust-icon" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="7" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 13h24M10 20h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M22 18.5h4M24 16.5v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
           </span>
-          <h3>Pay on Delivery</h3>
+          <h3>Pay on Delivery, Where Available</h3>
         </article>
         <article class="trust-item" id="contact">
           <span class="trust-icon" aria-hidden="true">
@@ -183,18 +185,19 @@
   <footer class="site-footer">
     <div class="footer-inner section-wrap">
       <div class="footer-brand">
-        <img src="images/ALFAJIR LOGO.jpeg" alt="ALFAJIR logo">
-        <p>THE DAWN OF SMART LIVING</p>
+        <img src="images/ALFAJIR LOGO.jpeg" alt="ALFAJIR Electronics — The Dawn of Smart Living">
+        <p>Quality electronics and home appliances for your home.</p>
+        <div class="footer-social">
+          <h3>Follow us</h3>
+          <div class="social-links" aria-label="Social media link placeholders">
+            <a href="https://www.instagram.com/alfajirkenya?rpxt=MXg0Z3pobG03MXBtaA==" class="social-link social-link-placeholder" data-social-placeholder aria-label="https://www.instagram.com/alfajirkenya?rpxt=MXg0Z3pobG03MXBtaA==" title="Add your Instagram profile link"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
+            <a href="https://www.facebook.com/alfajirkenya" class="social-link social-link-placeholder" data-social-placeholder aria-label="https://www.facebook.com/alfajirelectronics" title="Add your Facebook profile link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h2V4.5c-.4-.1-1.5-.2-2.8-.2-2.8 0-4.7 1.7-4.7 4.8V12H5.4v3.9h3.1V24h3.9v-8.1H15l.4-3.9h-3v-2.5c0-1.1.3-1.5 1.6-1.5Z"></path></svg></a>
+            <a href="https://www.tiktok.com/@alfajirkenya" class="social-link social-link-placeholder" data-social-placeholder aria-label="https://www.tiktok.com/@alfajirkenya" title="Add your TikTok profile link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h3c.2 2.2 1.5 3.6 3.8 3.8v3a8 8 0 0 1-3.8-1v6a6 6 0 1 1-6-6h1v3.2a3 3 0 1 0 1 2.2V3Z"></path></svg></a>
+          </div>
+        </div>
       </div>
 
       <div class="footer-links">
-        <div>
-          <h3>Navigation</h3>
-          <a href="index.html">Home</a>
-          <a href="category.html?category=televisions">Shop</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
         <div>
           <h3>Categories</h3>
           <a href="category.html?category=televisions">Televisions</a>
@@ -206,12 +209,27 @@
           <a href="category.html?category=home-appliances">Home Appliances</a>
         </div>
         <div>
-          <h3>Customer service</h3>
-          <a href="#">Delivery</a>
-          <a href="#">Warranty</a>
-          <a href="#contact">Contact Us</a>
+          <h3>Contact ALFAJIR Electronics</h3>
+          <p class="footer-detail">Mombasa Town, Kenya</p>
+          <a href="tel:0797606177">0797606177</a>
+          <a href="tel:0721974160">0721974160</a>
+          <a href="https://wa.me/254721974160" target="_blank" rel="noopener noreferrer">WhatsApp: 0721974160</a>
+          <a href="mailto:alfajir.mail@gmail.com">alfajir.mail@gmail.com</a>
+        </div>
+        <div>
+          <h3>Help &amp; Support</h3>
+          <a href="https://www.alfajirelectronics.com/contact.html" target="_blank" rel="noopener noreferrer">Contact support</a>
+          <a href="https://www.alfajirelectronics.com/faq.html" target="_blank" rel="noopener noreferrer">FAQs</a>
+          <a href="https://www.alfajirelectronics.com/shop.html" target="_blank" rel="noopener noreferrer">Smart Phones</a>
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <a href="https://www.alfajirelectronics.com/shipping.html" target="_blank" rel="noopener noreferrer">Shipping &amp; Returns</a>
+          <a href="https://www.alfajirelectronics.com/warranty.html" target="_blank" rel="noopener noreferrer">Warranty</a>
+          <a href="https://www.alfajirelectronics.com/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </div>
       </div>
+      <p class="footer-meta">© 2026 ALFAJIR Electronics. All rights reserved.</p>
     </div>
   </footer>
 </body>

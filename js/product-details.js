@@ -2,81 +2,73 @@ const productDetailsRoot = document.getElementById("product-details");
 const productId = new URLSearchParams(window.location.search).get("id");
 const product = window.ALFAJIR_PRODUCTS.find((item) => item.id === productId);
 
-function formatProductSpecLabel(key) {
-  return key.replace(/([A-Z])/g, " $1").replace(/^./, (letter) => letter.toUpperCase());
+function escapeProductHTML(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#39;"
+  })[character]);
 }
 
-function generateFallbackModel(productData) {
-  const source = [productData?.brand, productData?.name, productData?.id, productData?.specs?.model]
-    .filter((value) => value !== null && value !== undefined && String(value).trim() !== "")
-    .join(" ");
-
-  const model = source
-    .replace(/[^a-zA-Z0-9]+/g, " ")
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 8)
-    .map((token) => token.toUpperCase())
-    .join("-");
-
-  return model || "MODEL";
+function formatProductSpecLabel(key) {
+  return key.replace(/([A-Z])/g, " $1").replace(/^./, (letter) => letter.toUpperCase());
 }
 
 function renderProductDetails(productData) {
   const images = [...new Set([productData.image, ...(productData.images || [])].filter(Boolean))];
   const productSpecs = { ...(productData.specs || {}) };
-  if (productData.category === "televisions" && !productSpecs.refreshRate) {
-    productSpecs.refreshRate = "Not specified";
-  }
-  if (productData.category === "televisions") {
-    if (!productSpecs.connectivity) productSpecs.connectivity = "To be confirmed";
-    productSpecs.warranty = "1 Year";
-  }
   const specs = Object.entries(productSpecs)
-    .filter(([key]) => key !== "model")
+    .filter(([key]) => !["model", "warranty"].includes(key.toLowerCase()))
     .map(([key, value]) => `
       <div class="details-spec-item">
-        <dt>${formatProductSpecLabel(key)}</dt>
-        <dd>${value === "To be confirmed" || value === "Not specified" ? "Not provided yet" : value}</dd>
+        <dt>${escapeProductHTML(formatProductSpecLabel(key))}</dt>
+        <dd>${escapeProductHTML(value)}</dd>
       </div>
     `)
     .join("");
   const warranty = productData.warranty || productData.specs?.warranty;
-  const warrantyDisplay = warranty === "To be confirmed" || warranty === "Not specified"
-    ? "Not provided yet"
+  const warrantyDisplay = typeof warranty === "object" && warranty !== null && warranty.years
+    ? `${warranty.years} year${Number(warranty.years) === 1 ? "" : "s"}`
     : warranty;
-  const model = productData.model || productData.specs?.model || generateFallbackModel(productData);
-  const confirmedModel = model && String(model).trim() && String(model).toLowerCase() !== "not specified"
-    ? model
-    : "Model details pending";
+  const validWarranty = (typeof warrantyDisplay === "string" || typeof warrantyDisplay === "number")
+    && !["to be confirmed", "not specified"].includes(String(warrantyDisplay).toLowerCase());
+  const model = productData.model || productData.specs?.model;
+  const hasModel = model && String(model).trim() && String(model).toLowerCase() !== "not specified";
+  const price = Number(productData.price);
+  const hasPrice = productData.price !== null && productData.price !== undefined && Number.isFinite(price) && price > 0;
+  const enquiry = [
+    `Hello ALFAJIR, I am enquiring about ${productData.name}.`,
+    `Brand: ${productData.brand || "Not specified"}`,
+    `Model: ${hasModel ? model : "Not specified"}`,
+    `Price: ${hasPrice ? `KSh ${price.toLocaleString()}` : "Please confirm"}`
+  ].join("\n");
 
   document.title = `${productData.name} | ALFAJIR`;
   productDetailsRoot.innerHTML = `
     <article class="product-detail">
       <div class="product-gallery">
         <div class="product-detail-image">
-          <img class="product-gallery-main" src="${images[0] || ""}" alt="${productData.name}">
+          <img class="product-gallery-main" src="${escapeProductHTML(images[0] || "")}" alt="${escapeProductHTML(productData.name)}">
         </div>
         ${images.length > 1 ? `
           <div class="product-gallery-thumbnails" aria-label="Product images">
             ${images.map((image, index) => `
               <button class="product-gallery-thumbnail${index === 0 ? " is-active" : ""}"
-                type="button" data-image="${image}" aria-label="Show product image ${index + 1}"
+                type="button" data-image="${escapeProductHTML(image)}" aria-label="Show product image ${index + 1}"
                 aria-pressed="${index === 0}">
-                <img src="${image}" alt="">
+                <img src="${escapeProductHTML(image)}" alt="">
               </button>
             `).join("")}
           </div>
         ` : ""}
       </div>
       <div class="product-detail-copy">
-        <p class="product-brand">${productData.brand || ""}</p>
-        <h1>${productData.name}</h1>
-        <p class="detail-model">Model: ${confirmedModel}</p>
-        <p class="product-price detail-price">${productData.price === null || productData.price === undefined
-          ? "Price on request"
-          : `KSh ${Number(productData.price).toLocaleString()}`}</p>
+        <p class="product-brand">${escapeProductHTML(productData.brand || "")}</p>
+        <h1>${escapeProductHTML(productData.name)}</h1>
+        ${hasModel ? `<p class="detail-model">Model: ${escapeProductHTML(model)}</p>` : ""}
+        <p class="product-price detail-price">${hasPrice ? `KSh ${price.toLocaleString()}` : "Price on request"}</p>
         <p class="product-stock${productData.stock === false ? " is-out" : ""}">
           ${productData.stock === false ? "Out of stock" : productData.stock === true ? "In stock" : "Availability to be confirmed"}
         </p>
@@ -84,12 +76,20 @@ function renderProductDetails(productData) {
           <span>Quantity</span>
           <input class="product-quantity" type="number" min="1" step="1" value="1" inputmode="numeric">
         </label>
-        <button class="add-to-cart detail-add-to-cart" type="button" data-product-id="${productData.id}">Add to Cart</button>
-        <section class="product-detail-description" aria-labelledby="description-heading">
-          <h2 id="description-heading">Product description</h2>
-          <p>${productData.description || "Description not provided yet."}</p>
-        </section>
-        ${warranty && productData.category !== "televisions" ? `<p class="detail-warranty"><strong>Warranty:</strong> ${warrantyDisplay}</p>` : ""}
+        <button class="add-to-cart detail-add-to-cart" type="button" data-product-id="${escapeProductHTML(productData.id)}"${productData.stock === false ? " disabled" : ""}>${productData.stock === false ? "Out of Stock" : "Add to Cart"}</button>
+        <button class="compare-trigger detail-compare-trigger" type="button" data-compare-detail="${escapeProductHTML(productData.id)}"
+          data-product-name="${escapeProductHTML(productData.name)}" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v17m-5 1h10M5 6h14M5 6 2 13h6L5 6Zm14 0-3 7h6l-3-7Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="compare-label">Add to Compare</span>
+        </button>
+        <a class="whatsapp-enquiry" href="https://wa.me/?text=${encodeURIComponent(enquiry)}" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
+        ${productData.description ? `
+          <section class="product-detail-description" aria-labelledby="description-heading">
+            <h2 id="description-heading">Product description</h2>
+            <p>${escapeProductHTML(productData.description)}</p>
+          </section>
+        ` : ""}
+        ${validWarranty ? `<p class="detail-warranty"><strong>Warranty:</strong> ${escapeProductHTML(warrantyDisplay)}</p>` : ""}
         <section class="product-detail-specifications" aria-labelledby="specifications-heading">
           <h2 id="specifications-heading">Specifications</h2>
           ${specs
