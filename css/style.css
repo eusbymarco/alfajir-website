@@ -579,7 +579,7 @@ input:focus-visible {
   pointer-events: auto;
 }
 
-.hero-slide-black-friday.is-active {
+.hero-slide-poster.is-active {
   position: relative;
   inset: auto;
 }
@@ -588,9 +588,9 @@ input:focus-visible {
   display: block;
 }
 
-.hero-slide-black-friday .hero-image {
-  position: relative;
+.hero-slide-poster .hero-image {
   display: block;
+  position: relative;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -709,6 +709,14 @@ input:focus-visible {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.hero-slides.has-banner-slide + .hero-controls {
+  position: relative;
+  inset: auto;
+  justify-content: center;
+  padding: 10px 0;
+  background: var(--color-navy);
 }
 
 .slider-arrow {

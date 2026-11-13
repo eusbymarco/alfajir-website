@@ -1085,7 +1085,11 @@ function showSlide(index) {
   activeSlide = (index + slides.length) % slides.length;
   slides[activeSlide]?.parentElement.classList.toggle(
     "has-poster-slide",
-    slides[activeSlide].classList.contains("hero-slide-black-friday")
+    slides[activeSlide].classList.contains("hero-slide-poster")
+  );
+  slides[activeSlide]?.parentElement.classList.toggle(
+    "has-banner-slide",
+    slides[activeSlide].classList.contains("hero-slide-banner")
   );
 
   slides.forEach((slide, slideIndex) => {
