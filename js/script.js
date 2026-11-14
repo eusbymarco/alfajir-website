@@ -894,24 +894,27 @@ function renderBrandStrip() {
     }
   });
 
-  brandStrip.innerHTML = [...brands].map(([key, brand]) => {
+  const logoBrands = [...brands].filter(([key]) => brandLogoAssets.has(key));
+  const renderLogoCards = (isDuplicate = false) => logoBrands.map(([key, brand]) => {
     const logoPath = brandLogoAssets.get(key);
     const category = [...(brandCategories.get(key) || new Map())]
       .sort((a, b) => b[1] - a[1])[0]?.[0];
     const categoryUrl = category
       ? `category.html?category=${encodeURIComponent(category)}&brand=${encodeURIComponent(brand)}`
       : "category.html";
-    const logoImage = logoPath
-      ? `<img class="brand-logo-image" src="${logoPath}" alt="" loading="lazy" decoding="async">`
-      : "";
-    return `<a class="brand-logo-card${logoPath ? "" : " brand-logo-fallback"}" href="${categoryUrl}" aria-label="Shop ${escapeHTML(brand)}">${logoImage}<span class="brand-logo-name">${escapeHTML(brand)}</span></a>`;
+    const tabIndex = isDuplicate ? ' tabindex="-1"' : "";
+    return `<a class="brand-logo-card" href="${categoryUrl}" aria-label="Shop ${escapeHTML(brand)}"${tabIndex}><img class="brand-logo-image brand-logo-image--${key}" src="${logoPath}" alt="" decoding="async"></a>`;
   }).join("");
+
+  brandStrip.innerHTML = `
+    <div class="brand-strip-track">
+      <div class="brand-logo-group">${renderLogoCards()}</div>
+      <div class="brand-logo-group" aria-hidden="true">${renderLogoCards(true)}</div>
+    </div>`;
 
   brandStrip.querySelectorAll("img").forEach((logo) => {
     logo.addEventListener("error", () => {
-      const card = logo.parentElement;
-      logo.remove();
-      card.classList.add("brand-logo-fallback");
+      logo.parentElement.remove();
     }, { once: true });
   });
 }
