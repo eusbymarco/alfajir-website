@@ -82,7 +82,7 @@ function renderProductDetails(productData) {
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v17m-5 1h10M5 6h14M5 6 2 13h6L5 6Zm14 0-3 7h6l-3-7Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="compare-label">Add to Compare</span>
         </button>
-        <a class="whatsapp-enquiry" href="https://wa.me/?text=${encodeURIComponent(enquiry)}" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
+        <a class="whatsapp-enquiry" href="https://wa.me/${window.ALFAJIR_WHATSAPP_NUMBER}?text=${encodeURIComponent(enquiry)}" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
         ${productData.description ? `
           <section class="product-detail-description" aria-labelledby="description-heading">
             <h2 id="description-heading">Product description</h2>

@@ -472,6 +472,40 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
+.whatsapp-float {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 11;
+  display: grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  background: #25d366;
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgb(16 42 67 / 28%);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.whatsapp-float svg {
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
+}
+
+.whatsapp-float:focus-visible {
+  outline-offset: 4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .whatsapp-float:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgb(16 42 67 / 34%);
+  }
+}
+
 .search-form {
   grid-area: search;
   display: flex;
@@ -867,8 +901,13 @@ input:focus-visible {
 
 .category-label h3 {
   margin: 0;
+  color: var(--color-gold);
   font-size: 1.05rem;
   font-weight: 700;
+}
+
+.product-section .section-heading h2 {
+  color: var(--color-gold);
 }
 
 .category-label span {
@@ -2133,6 +2172,10 @@ input:focus-visible {
   .footer-links {
     grid-template-columns: 1fr;
   }
+}
+
+.has-comparison-bar .whatsapp-float {
+  bottom: max(124px, calc(108px + env(safe-area-inset-bottom)));
 }
 
 .has-comparison-bar {

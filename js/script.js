@@ -19,6 +19,8 @@ const products = Array.isArray(window.ALFAJIR_PRODUCTS) ? window.ALFAJIR_PRODUCT
 const CART_STORAGE_KEY = "alfajir-cart";
 const COMPARE_STORAGE_KEY = "alfajir-compare";
 const MAX_COMPARE_PRODUCTS = 4;
+const ALFAJIR_WHATSAPP_NUMBER = "254721974160";
+window.ALFAJIR_WHATSAPP_NUMBER = ALFAJIR_WHATSAPP_NUMBER;
 let cartItems = loadCartItems();
 let compareIds = loadComparedProductIds();
 let activeSlide = 0;
@@ -766,7 +768,8 @@ function renderCategoryPage() {
   } else if (activeBrands.get(key) && !availableBrands.has(activeBrands.get(key))) {
     activeBrands.delete(key);
   }
-  document.title = `${config.title} | ALFAJIR`;
+  const selectedBrand = activeBrands.get(key) || "";
+  document.title = `${config.title}${selectedBrand ? ` — ${selectedBrand}` : ""} | ALFAJIR`;
   categoryPage.innerHTML = `<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>›</span><span>${config.title}</span></nav>
     <div class="section-heading category-page-heading"><div><p class="section-kicker">SHOP BY CATEGORY</p><h1>${config.title}</h1></div></div>
     ${renderCategoryLayout(config, familyProducts)}`;
@@ -825,6 +828,28 @@ function renderCategoryProducts(categoryKey) {
       : '<p class="category-empty">No products available yet.</p>';
   const count = root.querySelector(".result-count");
   if (count) count.textContent = `${categoryProducts.length} product${categoryProducts.length === 1 ? "" : "s"}`;
+  if (categoryPage) {
+    const config = sectionConfig.find((item) => item.key === categoryKey);
+    const heading = categoryPage.querySelector(".category-page-heading h1");
+    const selectedBrand = activeBrand === "All Brands" ? "" : activeBrand;
+    if (heading && config) heading.textContent = selectedBrand ? `${config.title} — ${selectedBrand}` : config.title;
+    let indicator = categoryPage.querySelector(".selected-brand-filter");
+    if (selectedBrand && config) {
+      if (!indicator) {
+        indicator = document.createElement("p");
+        indicator.className = "selected-brand-filter";
+        heading?.after(indicator);
+      }
+      const clearUrl = `category.html?category=${encodeURIComponent(categoryKey)}${filter.subcategory ? `&subcategory=${encodeURIComponent(filter.subcategory)}` : ""}`;
+      indicator.replaceChildren(document.createTextNode(`Showing ${selectedBrand} products. `));
+      const clearLink = document.createElement("a");
+      clearLink.href = clearUrl;
+      clearLink.textContent = "Clear brand filter";
+      indicator.append(clearLink);
+    } else {
+      indicator?.remove();
+    }
+  }
 }
 
 function renderCategoryNavigation() {
@@ -917,6 +942,23 @@ function renderBrandStrip() {
       logo.parentElement.remove();
     }, { once: true });
   });
+}
+
+function createWhatsAppButton() {
+  const message = "Hello ALFAJIR, I am interested in your products.";
+  const link = document.createElement("a");
+  link.className = "whatsapp-float";
+  link.href = `https://wa.me/${ALFAJIR_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.setAttribute("aria-label", "Chat with ALFAJIR on WhatsApp");
+  link.title = "Chat with ALFAJIR on WhatsApp";
+  link.innerHTML = `
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16 3.2A12.7 12.7 0 0 0 5.2 22.6L3.5 29l6.6-1.7A12.8 12.8 0 1 0 16 3.2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M12.2 9.3c-.3-.6-.6-.6-.9-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.5 1.5 3.7c.2.3 2.5 4 6.1 5.4 3 .1 3.6.1 4.2-.1.6-.3 1.9-.9 2.1-1.7.3-.9.3-1.6.2-1.7-.1-.2-.4-.3-.8-.5-.4-.2-2-.9-2.3-1-.3-.1-.5-.2-.7.2-.2.4-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.4-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.7-1.8-1-2.4Z" fill="currentColor"/>
+    </svg>`;
+  document.body.append(link);
 }
 
 function applyBrandFilter(categoryKey, brandName) {
@@ -1070,7 +1112,7 @@ function createCartDialog() {
         `Estimated total: ${formatPrice(getCartTotal())}`,
         "Please confirm availability, delivery, and payment options."
       ].join("\n");
-      window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+      window.open(`https://wa.me/${ALFAJIR_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
     }
   });
   cartDialog.addEventListener("change", (event) => {
@@ -1189,6 +1231,7 @@ if (categoryNavigation) {
 }
 
 createCartDialog();
+createWhatsAppButton();
 document.querySelector(".cart-button")?.addEventListener("click", openCart);
 document.addEventListener("click", (event) => {
   const compareButton = event.target.closest("[data-compare-product], [data-compare-detail]");
